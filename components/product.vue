@@ -147,7 +147,7 @@
                       <div class="row priceLine">
                         <div class="pos-r fl col-12 d-flex" id="price-flexer">
                           <div class="fl col-sm-12 d-flex">
-                            <div class="fl discountPrice " data-old="0">
+                            <div class="fl discountPrice" data-old="0">
                               <span class="product-price" data-price="219,90"
                                 >219,90</span
                               >
@@ -226,7 +226,7 @@
                 class="fl col-12 mb angularTemplate"
                 data-url="/srv/service/product/get-related-products/3334/1"
                 data-callback="otherColorFunc"
-                style="visibility: visible;"
+                style="visibility: visible"
               ></div>
               <div class="box col-12 p-top">
                 <div class="row mb tooltipWrapper">
@@ -237,7 +237,7 @@
                   />
                   <div
                     class="subProductStockAlert outStock"
-                    style="display:none"
+                    style="display: none"
                   >
                     <a
                       data-width="500"
@@ -282,6 +282,7 @@
                               onclick="Add2Cart(3334, $('#subPro3334').val(), $('.detayAdet3334').val());"
                               class="col-12 fl"
                               id="addCartBtn"
+                              href=""
                             >
                               Sepete Ekle
                             </a>
@@ -354,9 +355,16 @@
                   </div>
                 </div>
               </div>
+
               <div class="urun-tab fl col-12" id="urun-tab">
-                <div class="tab-title">ÜRÜN ÖZELLİKLERİ</div>
-                <div class="tab-icerik ozellik" style="display: none;">
+                <div
+                  class="tab-title"
+                  :class="titleClasses"
+                  @click="toggleActive()"
+                >
+                  ÜRÜN ÖZELLİKLERİ
+                </div>
+                <div class="tab-icerik ozellik" v-show="isContentVisible">
                   <div
                     class="fl col-12"
                     id="productDetailTab"
@@ -371,7 +379,7 @@
                   </div>
                 </div>
                 <div class="tab-title">TESLİMAT VE İADE</div>
-                <div class="tab-icerik" style="display: none;">
+                <div class="tab-icerik" style="display: none">
                   1-İade hakkının kullanılması için 7 (yedi) günlük süre içinde
                   Satıcı’ya telefon ile whatsapp üzerinden (+0552 599 15 50)
                   bildirimde bulunulması ve iade edilmek istenen Ürün ve
@@ -409,7 +417,7 @@
                 <div
                   class="tab-icerik loaderWrapper"
                   id="odeme-wrapper"
-                  style="display: none;"
+                  style="display: none"
                 ></div>
                 <div
                   class="tab-title"
@@ -421,7 +429,7 @@
                 <div
                   class="tab-icerik loaderWrapper"
                   id="yorum-wrapper"
-                  style="display: none;"
+                  style="display: none"
                 ></div>
               </div>
               <div class="fl col-12 d-none" id="cmpList">
@@ -445,6 +453,28 @@
 </template>
 
 <style scoped>
+#fbShareBtn {
+  background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/facebook-logo.svg);
+}
+#twBtn {
+  background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/twitter.svg);
+}
+#wpBtn {
+  background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/whatsapp.svg);
+}
+#pinBtn {
+  background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/pinterest.svg);
+}
+.DetayWp a:before {
+  content: '';
+  background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/whatsapp-logo-variant.svg)
+    no-repeat center;
+  background-size: 100%;
+  width: 32px;
+  height: 35px;
+  float: left;
+  margin-right: 10px;
+}
 .col-12 {
   width: 100%;
 }
@@ -554,7 +584,7 @@
 }
 .personaclick-recommend .owl-prev:after {
   visibility: visible !important;
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   display: block;
@@ -570,7 +600,7 @@
 }
 .personaclick-recommend .owl-next:after {
   visibility: visible !important;
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   display: block;
@@ -740,7 +770,7 @@
 }
 .personaclick-recommend .owl-prev:after {
   visibility: visible !important;
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   display: block;
@@ -757,7 +787,7 @@
   color: #000;
 }
 .tab-title:after {
-  content: "+";
+  content: '+';
   float: right;
   font-size: 18px;
   line-height: 14px;
@@ -775,7 +805,7 @@
 }
 .personaclick-recommend .owl-next:after {
   visibility: visible !important;
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   display: block;
@@ -960,7 +990,7 @@ button {
   -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 #cart-wrapper {
   border-bottom: 1px solid #000;
@@ -1092,3 +1122,26 @@ button {
   }
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      isActive: false,
+    }
+  },
+  computed: {
+    isContentVisible() {
+      return this.isActive
+    },
+    titleClasses() {
+      return this.isActive ? 'active' : ''
+    },
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive
+    },
+  },
+}
+</script>

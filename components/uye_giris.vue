@@ -2,14 +2,14 @@
 <template>
   <div
     class="pWrapper"
-    style="visibility: visible; display: block;"
+    style="visibility: visible; display: block"
     data-name="myPopupWin"
   >
     <div class="flex">
-      <div class="pBg close" style="z-index:9980;"></div>
+      <div class="pBg close" style="z-index: 9980"></div>
       <div
-        style="width:500px;margin:0 auto;;z-index:9981;"
-        class="pWin box whiteBg    br5"
+        style="width: 500px; margin: 0 auto; z-index: 9981"
+        class="pWin box whiteBg br5"
         id="myPopupWin"
       >
         <div class="pClose close"></div>
@@ -59,7 +59,7 @@
                 </div>
                 <div
                   class="box col-12 form-control tooltipWrapper"
-                  style="display:none;"
+                  style="display: none"
                 >
                   <div class="row mb input-icon">
                     <img
@@ -74,7 +74,7 @@
                       name="pop-security"
                       placeholder="Güvenlik Kodu"
                       class="col col-12 mail required withHolder loadedPlace personaclick-initialized"
-                      style="height: 30px;"
+                      style="height: 30px"
                     />
                     <span class="col ease placeholder">Güvenlik Kodu</span>
                   </div>
@@ -104,7 +104,7 @@
                 <div class="col col-12">
                   <div class="row">
                     <a
-                      href="/uye-kayit"
+                      href="/uye_kayit"
                       class="fr form-link"
                       id="popup-member-register"
                       >Üye Ol</a

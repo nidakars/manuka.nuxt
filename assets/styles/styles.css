@@ -1,5 +1,1541 @@
 /* DEPRECATED */
 
+.urunDetayGosterJs {
+    top: 10px !important;
+    right: 10px !important;
+    height: 35px !important;
+    line-height: 35px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    background-color: #e35252 !important;
+    border: 0 !important;
+    z-index: 999999;
+    transition: background-color .5s;
+}
+
+.urunDetayGosterJs:hover {
+    background-color: #c54444 !important;
+}
+
+.urunDetayGosterJs:before {
+    content: '\e827';
+    line-height: 30px;
+    color: inherit;
+    font-family: 'tsoft';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-align: center;
+    text-transform: none;
+    margin-right: 8px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+}
+
+.indirimliRed {
+    color: #fe3600 !important;
+}
+
+#productLeft .slide-wrapper>.row:first-child {
+    position: relative;
+}
+
+.zoomWindow {
+    border: 1px solid #d9d9d9 !important;
+}
+
+#productThumbs li.active .box-border {
+    border-color: #000;
+}
+
+#productBrandText {
+    font-size: 14px;
+    color: #393939;
+}
+
+#productName {
+    line-height: 28px;
+    font-size: 26px;
+    color: #000;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.productName {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productBrandImg {
+    margin-bottom: 10px;
+}
+
+#supplier-question {
+    line-height: 20px;
+    font-size: 10px;
+}
+
+.productComment {
+    width: 87px;
+}
+
+.comment-btn {
+    line-height: 30px;
+    color: #000;
+    font-size: 13px;
+}
+
+.mainPrices {
+    position: relative;
+}
+
+.priceLine,
+.variantLine,
+.noteLine {
+    line-height: 23px;
+    font-size: 13px;
+}
+
+.priceType,
+.noteTitle {
+    width: 120px;
+}
+
+.normalPrice {
+    font-size: 19px;
+}
+
+.discountPrice {
+    color: #000000;
+    font-weight: 600;
+}
+
+.money-order-price {
+    float: right;
+    padding-left: 5px;
+}
+
+#productRight .order-note textarea {
+    padding-top: 20px;
+}
+
+.variantBox select {
+    min-width: 40px;
+    height: 40px;
+}
+
+.variantBox a:hover {
+    background: #000;
+}
+
+.variantBox a.col.ring {
+    padding-right: 2px;
+    padding-left: 2px;
+    border-radius: 30px;
+}
+
+.variantBox .nocursor {
+    cursor: default;
+}
+
+.variantBox a.selected {
+    background: #000;
+}
+
+.variantBox a.passive {
+    opacity: 0.6;
+}
+
+.variantBox a.passive p {
+    color: #B4B4B4;
+}
+
+.variantBox a.passive:hover {}
+
+.variantBox a p {
+    width: 100%;
+    height: 100%;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 0;
+    font-weight: 500;
+}
+
+.variantBox a.ring p {
+    border-radius: 20px;
+}
+
+.variantBox select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.variantBox select[data-group-id="2"] option:not([data-status="enable"]) {
+    display: none;
+}
+
+.imageInner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.discounts.currentDiscount {
+    background: #f0f0f0;
+}
+
+.noteLine {
+    padding-top: 0;
+}
+
+.noteBox textarea {
+    min-width: 250px;
+    height: 40px;
+    font-size: 12px;
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+    word-break: break-all;
+}
+
+.shopListLink:hover {
+    color: #e35252;
+}
+
+[dir="rtl"] .productFunction {
+    padding-right: 35px;
+    padding-left: 10px;
+    background-position: right;
+}
+
+.productFunction:hover {
+    color: #e35252;
+}
+
+.shareTitle {
+    line-height: 26px;
+    font-size: 14px;
+    color: #000;
+}
+
+.shareBtns .col {
+    padding-right: 5px;
+}
+
+.shareBtns a {}
+
+.shareBtns a:before {
+    line-height: 16px;
+}
+
+.smlIconSet .shareBtns a {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 5px;
+}
+
+#urun-tab .slide-wrapper {
+    overflow: hidden;
+}
+
+#tabBtn li {
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    border-bottom: 1px solid #B3B3B3;
+}
+
+#tabBtn li span:before {
+    content: 'x';
+    margin-right: 14px;
+    padding-left: 15px;
+}
+
+#tabBtn li:hover,
+#tabBtn li:hover .btn {
+    box-shadow: none;
+}
+
+#tabBtn li.active span.text-description {
+    color: #000;
+}
+
+#tabBtn li.active:before,
+#tabBtn li.active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e35252;
+}
+
+#tabBtn li.active:before {
+    bottom: 2px;
+}
+
+#tabBtn li.active:after {
+    bottom: 0px;
+}
+
+#tabBtn li .stars {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+#tabPanel {
+    overflow: hidden;
+}
+
+#tabPanel li {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+#tabPanel li.current {
+    width: 100%;
+}
+
+#tabPanel li {
+    line-height: 15px;
+}
+
+#tabPanel li table {
+    float: left;
+    max-width: 100%;
+}
+
+#productDetailTab li {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+#banks {
+    line-height: 2;
+}
+
+.like {
+    padding-left: 0;
+    /* background: url('likeIcon.png') no-repeat 0 center; */
+}
+
+.dislike {
+    padding-left: 21px;
+    /* background: url('dislikeIcon.png') no-repeat 0 center; */
+}
+
+[dir="rtl"] .addthis_toolbox {
+    float: right;
+}
+
+.subCode {
+    color: #B3B3B3;
+    font-size: 17px;
+    /* */
+}
+
+.subCode span {}
+
+.stockEvent {
+    color: #1a1a17;
+    font-size: 15px;
+    /*  */
+}
+
+.stockEvent span {}
+
+.shortDescTitle {
+    font-size: 15px;
+    color: #1a1a17;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 19px;
+}
+
+.shortDescTitle:after {
+    content: '';
+    background: #000000;
+    width: 149px;
+    display: block;
+    height: 1px;
+}
+
+.shortDesc .copyContainer {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    color: #1a1a17;
+}
+
+#productRight #addCartBtn {
+    background: #000000;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.productType {
+    font-size: 15px;
+    color: #1a1a17;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.productType:before {
+    content: '';
+    background: #000000;
+    width: 36px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.productType:after {
+    content: '';
+    background: #f4f4f4;
+    width: 180px;
+    height: 1px;
+    display: block;
+}
+
+#cart-wrapper .qtyBtns {
+    height: 55px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+}
+
+.ico1:hover:after {
+    content: "MAK NEDE MAKS. 30'C'DE YIKAMA";
+    position: absolute;
+    bottom: -30px;
+    font-size: 15px;
+    color: #1a1a17;
+    left: 15px;
+}
+
+.ico2:hover::after {
+    content: "MAK NEDE MAKS. 30'C'DE YIKAMA";
+    position: absolute;
+    bottom: -30px;
+    font-size: 15px;
+    color: rgb(26, 26, 23);
+    left: 15px;
+}
+
+.ico3:hover::after {
+    content: "MAK NEDE MAKS. 30'C'DE YIKAMA";
+    position: absolute;
+    bottom: -30px;
+    font-size: 15px;
+    color: rgb(26, 26, 23);
+    left: 15px;
+}
+
+.ico4:hover::after {
+    content: "MAK NEDE MAKS. 30'C'DE YIKAMA";
+    position: absolute;
+    bottom: -30px;
+    font-size: 15px;
+    color: rgb(26, 26, 23);
+    left: 15px;
+}
+
+.ico5:hover::after {
+    content: "MAK NEDE MAKS. 30'C'DE YIKAMA";
+    position: absolute;
+    bottom: -30px;
+    font-size: 15px;
+    color: rgb(26, 26, 23);
+    left: 15px;
+}
+
+#whtBtn {
+    background: url("/assets/whatsapp.svg") no-repeat center center;
+    width: 19.7px;
+    height: 18.8px;
+    display: block;
+    border: none;
+}
+
+.popupsPro {
+    display: none;
+}
+
+.popupsPro.active {
+    display: block;
+    position: fixed;
+    background: url(/Data/EditorFiles/TedarikciPaneli/WhatsApp%20Image%202019-10-08%20at%2016.55.31.jpeg) no-repeat right 93% #ffffff;
+    z-index: 999;
+    width: 50%;
+    left: 23%;
+    padding: 136px 45px 72px 45px;
+    min-height: 500px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: #1a1a17;
+    top: 10%;
+    max-height: 578px;
+    overflow-y: auto;
+    overflow: scroll;
+    height: 50px;
+}
+
+.popupsPro2 {
+    display: none;
+}
+
+.popupsPro2.active {
+    display: block;
+    position: fixed;
+    background: url(/Data/EditorFiles/TedarikciPaneli/WhatsApp%20Image%202019-10-08%20at%2016.55.31.jpeg) no-repeat right 93% #ffffff;
+    z-index: 999;
+    width: 50%;
+    left: 23%;
+    padding: 70px 45px 90px 45px;
+    min-height: 600px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: #1a1a17;
+    top: 10%;
+    overflow: scroll;
+    height: 50px;
+}
+
+.popupsPro3 {
+    display: none;
+}
+
+.popupsPro3.active {
+    display: block;
+    position: fixed;
+    background: url(/Data/EditorFiles/TedarikciPaneli/WhatsApp%20Image%202019-10-08%20at%2016.55.31.jpeg) no-repeat right 93% #ffffff;
+    z-index: 999;
+    width: 50%;
+    left: 23%;
+    padding: 136px 45px 146px 45px;
+    min-height: 150px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: #1a1a17;
+    top: 10%;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 90px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 37px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.popupOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #ddddddad;
+    z-index: 999;
+}
+
+li#deneme {
+    list-style-type: none;
+}
+
+.popupsPro .title {
+    font-size: 20px;
+    color: #1a1a17;
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 44px;
+}
+
+.popupsPro .title:after {
+    content: '';
+    background: #ececec;
+    width: 445px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 23%;
+    bottom: 0;
+}
+
+.popupsPro2 .title {
+    font-size: 20px;
+    color: #1a1a17;
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 33px;
+}
+
+.popupsPro2 .title:after {
+    content: '';
+    background: #ececec;
+    width: 445px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 23%;
+    bottom: 0;
+}
+
+.popupsPro3 .title {
+    font-size: 20px;
+    color: #1a1a17;
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 44px;
+}
+
+.popupsPro3 .title:after {
+    content: '';
+    background: #ececec;
+    width: 445px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 23%;
+    bottom: 0;
+}
+
+.with-img {
+    width: 38px;
+    height: 38px !important;
+    margin-right: 11.2px;
+    margin-bottom: 11.2px;
+    border: 1px solid #ececec;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.renkBox {
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+}
+
+.allNitelik {
+    font-size: 12px;
+    color: #1a1a17;
+    line-height: normal;
+    /* background: url(down.svg) no-repeat 91% center; */
+    padding-left: 0;
+    padding-right: 4px;
+    margin-top: 49px;
+    cursor: pointer;
+}
+
+.variantType {
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#tabBtn li:after {
+    content: '+';
+    padding-right: 10px;
+    float: right;
+    color: #919191;
+    font-size: 18px;
+}
+
+#stock-alert-btn:before {
+    content: '+';
+    padding-left: 6px;
+    padding-right: 13px;
+}
+
+#price-alert-btn:before {
+    content: '+';
+    padding-left: 8px;
+    padding-right: 13px;
+}
+
+a#stock-alert-btn {
+    cursor: pointer;
+    padding-bottom: 17px;
+    font-size: 15px;
+    color: #9f1c1c;
+}
+
+a#price-alert-btn {
+    cursor: pointer;
+    font-size: 15px;
+    color: #9f1c1c;
+}
+
+.fullscreenBtn {
+    width: 20px;
+    height: 23px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+li.col-1-5 {
+    width: 90px;
+    height: 120px;
+    object-fit: contain;
+}
+
+li.col-1-5:last-child {
+    margin-right: 0;
+}
+
+#productLeft #thumbControl {
+    width: calc(100% + 41px);
+    left: -16px;
+}
+
+.shortDesc span {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    color: #1a1a17;
+}
+
+#otherColorProducts .product-description {
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#otherColorProductsSlide li:nth-child(n+11) {
+    /* display:           none; */
+}
+
+.iliskiliUrun.active #otherColorProductsSlide li:nth-child(n+11) {
+    display: block;
+}
+
+.videoDetay video {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.videoDetay video source {
+    width: 100%;
+    height: 100%;
+}
+
+#cart-wrapper .productType {
+    display: none;
+}
+
+#cart-wrapper .qtyBox {
+    display: none;
+}
+
+.YerliUretim {
+    text-align: right;
+}
+
+.mainPrices {
+    border-bottom: 1px solid #000;
+}
+
+.variantBox a {
+    min-width: 46px;
+    height: 46px;
+    margin-right: 10px;
+    padding: 0 2px !important;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.variantBox a.selected p,
+.variantBox a:hover p {
+    color: #fff;
+}
+
+.variantBox.subTwo {
+    padding-left: 0;
+}
+
+.flexwrap.VariantSize {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.BedenTabloBtn {
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+
+.shopListLink {
+    background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/heart.svg) no-repeat center;
+    background-size: 55%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 55px;
+    width: 55px;
+    margin-left: 10px;
+}
+
+#cart-wrapper {
+    border-bottom: 1px solid #000;
+    padding-bottom: 40px;
+}
+
+.shortDesc {
+    font-size: 13px;
+}
+
+.EkbirBox {
+    border-bottom: 1px solid #000;
+    padding: 25px 0;
+}
+
+.EkbirBaslik {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.EkbirText {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.KargoTarih:before {
+    content: "";
+    /* background: url(/Data/EditorFiles/tema/svg/delivery-truck.svg) no-repeat center; */
+    width: 45px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.DetayButons {
+    margin-top: 30px;
+}
+
+.DetayButons a {
+    border: 1px solid #000;
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.DetayHbrBtn a:before {
+    content: "";
+    /* background: url(/Data/EditorFiles/tema/svg/mail.svg) no-repeat center; */
+    background-size: 100%;
+    width: 32px;
+    height: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+.DetayWp a:before {
+    content: "";
+    background: url(/assets/whatsapp-logo-variant.svg) no-repeat center;
+    background-size: 100%;
+    width: 32px;
+    height: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+.DetayButons span {
+    float: left;
+}
+
+.KargoTarih .fl {
+    width: calc(100% - 55px);
+    line-height: 18px;
+    font-size: 14px;
+}
+
+#fbShareBtn {
+    background-image: url(/assets/facebook-logo.svg);
+}
+
+#twBtn {
+    background-image: url(/assets/twitter.svg);
+}
+
+#pinBtn {
+    background-image: url(/assets/pinterest.svg);
+}
+
+#wpBtn {
+    background-image: url(/assets/whatsapp.svg);
+}
+
+.DetaySosyalMedya {
+    margin-top: 30px;
+}
+
+.tab-title:after {
+    content: "+";
+    float: right;
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #919191;
+    padding-right: 5px;
+}
+
+.tab-title.active:after {
+    content: "-";
+}
+
+.tab-title {
+    border-bottom: 1px solid #868686;
+    padding: 15px 0;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+}
+
+.tab-icerik {
+    padding: 10px;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#commentTabContent .popupWin {
+    font-weight: 700;
+}
+
+.DetayYaziSag.flexwrap {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.DetayYaziSag a {
+    width: 30%;
+    float: left;
+}
+
+.DetayYaziBaslik {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.DetayYaziBox {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+
+.DetayYaziLink {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+#productLeft {
+    position: relative;
+}
+
+#productLeft .icon-new,
+#productLeft .out-of-stock {
+    right: 0;
+    top: 0;
+    left: inherit;
+    bottom: inherit;
+    font-size: 18px;
+    display: none !important;
+}
+
+.outStock .priceAlertLink {
+    background: #000000;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 15px;
+}
+
+.outStock .priceAlertLink:hover {
+    background: #efb223;
+}
+
+.variantBox.subOne .variantList a {
+    width: auto;
+    height: inherit;
+    border: 0;
+    cursor: default;
+}
+
+.variantBox.subOne .variantList a p {
+    line-height: inherit;
+}
+
+.variantBox.subOne .variantList a.selected,
+.variantBox.subOne .variantList a:hover {
+    background: none;
+}
+
+.variantBox.subOne .variantList a.selected p,
+.variantBox.subOne .variantList a:hover p {
+    color: #000;
+}
+
+.DetailColorBox .variantList {
+    padding: 0;
+}
+
+.DetailColorBox .variantLine {
+    line-height: inherit;
+}
+
+.KodRenk.flexwrap {
+    justify-content: space-between;
+}
+
+.subProductStockAlert {
+    margin-bottom: 10px;
+}
+
+.subProductStockAlert #shopListLink {
+    height: 45px;
+    background-size: 50%;
+}
+
+.variantBox a:hover .SonUrun+.BedenTooltip {
+    display: block;
+}
+
+.BedenTooltip {
+    position: absolute;
+    background: #efb222;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    left: 50%;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 120%;
+    z-index: 3;
+}
+
+.BedenTooltip:after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #efb222;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.variantBox a .SonUrun {
+    background: url("/Data/EditorFiles/tema/img/clock3.png") no-repeat right center;
+    text-align: right;
+    width: 26px;
+    height: 42px;
+    float: right;
+}
+
+.variantBox.subTwo a p {
+    min-width: 38px;
+    float: right;
+    width: initial;
+}
+
+.SizinTarzBaslik {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.SizinTarzMetin {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+}
+
+#TarzOwl.owl-theme .owl-nav [class*=owl-] {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 33;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#TarzOwl .owl-nav {
+    margin: 0;
+}
+
+#TarzOwl .owl-next {
+    right: 5px;
+}
+
+.owl-prev {
+    left: 5px;
+}
+
+.SizinTarzAlan {
+    margin: 50px 0;
+}
+
+.shopListLink.removeFavorite {
+    background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/heart-active2.svg) no-repeat center;
+    background-size: 55%;
+}
+
+.shopListLink:hover {
+    background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/heart-active2.svg) no-repeat center;
+    background-size: 55%;
+}
+
+@media screen and (min-width: 768px) {
+    a.videobtn {
+        width: 93px;
+        height: 93px;
+    }
+    #mobileBuyBtn {
+        width: calc(95% - 65px);
+    }
+    .KargoTarih {
+        margin-top: 40px;
+    }
+    .variantWrapper {
+        margin-bottom: 10px;
+    }
+    #productLeft .slideControl {
+        display: none;
+    }
+    #productImage li.col-6:nth-child(5),
+    #productImage li.col-6:nth-child(6),
+    #productImage li.col-6:nth-child(7),
+    #productImage li.col-6:nth-child(8) {
+        width: 25%;
+        clear: none;
+    }
+    .currencyPrice {
+        font-size: 18px;
+    }
+    .discountPrice {
+        line-height: 22px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #productRight {
+        right: 0;
+        top: 10px;
+        -moz-animation: top .5s ease;
+        transition: top .5s ease;
+        -wbkit-transition: top .5s ease;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -ms-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        position: sticky;
+        position: -webkit-sticky;
+        background: #fff;
+        z-index: 22;
+        height: 100%;
+    }
+    #header-wrap.sticky {
+        position: relative;
+    }
+    .SizinTarzSol {
+        padding-right: 20px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    #productLeft ul#productImage .image-wrapper .imgInner {
+        align-items: initial;
+    }
+    .DetayYaziSol {
+        padding-right: 15px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .DetayYaziSag.flexwrap {
+        padding-left: 15px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+    }
+    .DetayYaziAlan.flexwrap {
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin: 75px 0;
+    }
+}
+
+@media screen and (min-width: 1231px) {
+    .DetayWp {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1230px) and (min-width: 1001px) {
+    .DetayButons>div {
+        width: 140px;
+        margin: 0 5px;
+    }
+    .DetayButons a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .DetayWp a:before,
+    .DetayHbrBtn a:before {
+        float: none;
+        display: inline-block;
+        margin: 0;
+    }
+    .DetayButons span {
+        width: 100%;
+    }
+    #productName {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .SizinTarzSol {
+        margin-bottom: 25px
+    }
+    .DetayWp {
+        margin-right: 15px;
+    }
+    .DetayYaziAlan.flexwrap {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .DetayYaziSol {
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    #productRight {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #quickview #productRight {
+        padding-right: 10px;
+    }
+    #quickview #cart-wrapper {
+        position: relative;
+        padding: 0;
+        border: 0;
+    }
+    #quickview .variantBox .variantList.p-right {
+        padding: 10px 0;
+    }
+    #quickview .variantWrapper .row.mb.variantLine {
+        margin: 0;
+    }
+    #backToTop {
+        bottom: 90px;
+        right: 10px;
+    }
+    .shareBtns .col {
+        padding-right: 10px;
+    }
+    .SizinTarzBaslik {
+        font-size: 20px;
+    }
+    .SizinTarzMetin {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .SizinTarzAlan {
+        margin: 20px 0;
+    }
+    .OwlDetayImg .image-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .OwlDetayImg .owl-nav [class*=owl-] {
+        width: 28px;
+        height: 40px;
+        top: 45%;
+        margin: 0;
+        padding: 0;
+    }
+    .OwlDetayImg.owl-theme .owl-nav .owl-prev {
+        background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/back.svg) no-repeat center !important;
+    }
+    .OwlDetayImg.owl-theme .owl-nav .owl-next {
+        background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/right.svg) no-repeat center !important;
+    }
+    #story-widget {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+    }
+    .variantBox.subOne .variantList a p {
+        font-size: 13px;
+    }
+    #cart-wrapper {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 22;
+        background: #fff;
+        padding-bottom: 0;
+        padding: 5px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    #mobileBuyBtn {
+        width: calc(100% - 65px);
+    }
+    .DetayUrunGrupBaslik {
+        margin: 0 !important;
+    }
+    .KargoTarih {
+        margin-top: 20px;
+    }
+    .variantWrapper {
+        margin-bottom: 20px;
+    }
+    .DetayUrunGrupAlan {
+        margin-bottom: 0 !important;
+    }
+    #productInfo .box.double {
+        padding: 0 20px;
+    }
+    .DetayWp a:before {
+        width: 26px;
+        height: 26px;
+        background-position: center top;
+    }
+    .DetayButons a {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .DetayHbrBtn a:before {
+        width: 26px;
+        background-position: center top;
+        height: 26px;
+    }
+    .DetayWp {
+        margin-right: 10px;
+    }
+    .mainPrices.box.double {
+        padding: 10px 20px;
+    }
+    .DetayYaziBaslik {
+        font-size: 18px;
+    }
+    .outStock .priceAlertLink {
+        font-size: 13px;
+    }
+    .DetayYaziBox {
+        font-size: 14px;
+    }
+    .DetayYaziLink {
+        font-size: 14px;
+    }
+    #productLeft .slideControl span {
+        width: 24px;
+        height: 24px;
+        top: 45%;
+    }
+    #productName {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 5px 0;
+    }
+    .discountPrice {
+        font-size: 18px;
+    }
+    #otherColorProducts .product-description,
+    .variantType {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .UrunGrupBaslik {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .subCode {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .popupsPro.active {
+        display: block;
+        width: 70%;
+        left: 14%;
+        padding: 120px 75px 130px 75px;
+        min-height: 116px;
+        top: 10%;
+    }
+    .currencyPrice.discountedPrice {
+        line-height: inherit;
+        font-size: 16px;
+    }
+    a#price-alert-btn {
+        padding-bottom: 17px;
+    }
+    .zopim {
+        bottom: 80px !important;
+    }
+    .urunDetayGosterJs {
+        display: none !important;
+    }
+    #productLeft {
+        padding-right: 0;
+    }
+    #productRight {
+        padding-top: 10px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .comment-star-wrapper {
+        position: static;
+        float: left;
+    }
+    #price-flexer .comment-star-wrapper :before {
+        margin-right: 8px;
+        margin-left: 0;
+    }
+    #mobileTabBtn {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    #tabBtn li span {
+        display: inherit;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    #product-buttons a {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .popupsPro .title:after {
+        left: 0;
+        width: 100%;
+    }
+    .popupsPro.active {
+        width: 100%;
+        left: 0;
+        padding: 92px 75px 58px 75px;
+        min-height: 318px;
+        top: 13%;
+    }
+    .popupsPro2 .title:after {
+        left: 0;
+        width: 100%;
+    }
+    .popupsPro2.active {
+        width: 100%;
+        left: 0;
+        padding: 92px 75px 58px 75px;
+        min-height: 116px;
+        top: 10%;
+    }
+    .popupsPro3 .title:after {
+        left: 0;
+        width: 100%;
+    }
+    .popupsPro3.active {
+        width: 100%;
+        left: 0;
+        padding: 92px 75px 58px 75px;
+        min-height: 116px;
+        top: 10%;
+    }
+}
+
+#otherColorProductsSlide li:nth-child(n+11) {
+    display: none;
+}
+
+.iliskiliUrun.active #otherColorProductsSlide li:nth-child(n+11) {
+    display: block;
+}
+
 input.personaclick-instant-search {
     position: relative !important;
     z-index: 997 !important;
@@ -5274,12 +6810,12 @@ overflow:hidden;*/
 }
 
 .slideControl .colPrev {
-    /* background-image: url(/Data/EditorFiles/tema/svg/back.svg); */
+    background-image: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/back.svg);
     left: 5px;
 }
 
 .slideControl .colNext {
-    /* background-image: url(/Data/EditorFiles/tema/svg/right.svg); */
+    background-image: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/right.svg);
     right: 5px;
 }
 
@@ -13821,11 +15357,11 @@ display:      block;
 }
 
 .UrunGrupAlan .owl-theme .owl-nav .owl-prev {
-    /* background: url(/Data/EditorFiles/tema/svg/back.svg) no-repeat center !important; */
+    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/back.svg) no-repeat center !important;
 }
 
 .UrunGrupAlan .owl-theme .owl-nav .owl-next {
-    /* background: url(/Data/EditorFiles/tema/svg/right.svg) no-repeat center !important; */
+    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/right.svg) no-repeat center !important;
 }
 
 .UrunGrupAlan .owl-theme .owl-nav {
@@ -13950,11 +15486,11 @@ display:      block;
 }
 
 .SepetFavoriUrunler .owl-theme .owl-nav .owl-prev {
-    /* background: url(/Data/EditorFiles/tema/svg/back.svg) no-repeat center !important; */
+    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/back.svg) no-repeat center !important;
 }
 
 .SepetFavoriUrunler .owl-theme .owl-nav .owl-next {
-    /* background: url(/Data/EditorFiles/tema/svg/right.svg) no-repeat center !important; */
+    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/right.svg) no-repeat center !important;
 }
 
 .SepetFavoriUrunler .owl-theme .owl-nav .owl-prev {
@@ -13979,12 +15515,12 @@ display:      block;
 }
 
 .HomeProductGrup .owl-nav .owl-prev {
-    /* background: url(/Data/EditorFiles/tema/svg/back.svg) !important; */
+    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/back.svg) !important;
     left: 5px;
 }
 
 .HomeProductGrup .owl-nav .owl-next {
-    /* background: url(/Data/EditorFiles/tema/svg/right.svg) !important; */
+    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/right.svg) !important;
     right: 5px;
 }
 

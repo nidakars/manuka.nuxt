@@ -28,15 +28,10 @@
                 ></span>
                 <div class="col col-12 drop-down hover pos-r UrunListeBottom">
                   <div class="row">
-                    <a
-                      data-url="/ekose-astarli-ceket-mavi"
-                      class="productBtn fl zoomBtn hide"
+                    <a data-url="/ceket-mavi" class="productBtn fl zoomBtn hide"
                       >HIZLI GÖRÜNÜM</a
                     >
-                    <a
-                      href="/ekose-astarli-ceket-mavi"
-                      class="image-wrapper fl detailLink"
-                    >
+                    <a href="/ceket-mavi" class="image-wrapper fl detailLink">
                       <span class="imgInner">
                         <img
                           src="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13403-33-O.jpg"
@@ -56,7 +51,7 @@
                         <div class="box col-12">
                           <div class="row">
                             <a
-                              href="/ekose-astarli-ceket-mavi"
+                              href="/ceket-mavi"
                               title="EKOSE ASTARLI CEKET MAVİ"
                               class="col col-12 text-description detailLink productTitle"
                               data-id="3334"
@@ -1174,40 +1169,33 @@
   </div>
 </template>
 
-
 <style scoped>
-
-.productItem .drop-down>.row {
-    margin: 0;
-    position: relative;
+.productItem .drop-down > .row {
+  margin: 0;
+  position: relative;
 }
-.row
-{
-margin-left: -10px;
-margin-right:-10px;
-clear: both;
-display:block;
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+  clear: both;
+  display: block;
 }
-.detailLink
-{
-padding-right: 35px;
-box-sizing: border-box
-;-webkit-box-sizing: border-box;
-color: #000
-;font-size: 16px;
-line-height: 17px;
+.detailLink {
+  padding-right: 35px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #000;
+  font-size: 16px;
+  line-height: 17px;
 }
 .box,
-.col
-{
-float: left;
-padding-left:10px;
-padding-right: 10px;
-box-sizing:border-box;
+.col {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
-.catalogWrapper .productItem .text-description.detailLink
-{
-padding-left: 0;
+.catalogWrapper .productItem .text-description.detailLink {
+  padding-left: 0;
 }
-
 </style>

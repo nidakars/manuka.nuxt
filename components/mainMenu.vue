@@ -46,7 +46,7 @@
                   class="pos-a col-12 whiteBg box-border"
                   id="live-search-box"
                   data-callback="searchCallback"
-                  style="visibility:hidden;"
+                  style="visibility: hidden"
                 >
                   <div class="box col-12 p-top">
                     <ul class="box col-12 p-bottom" ng-if="products.length > 0">
@@ -104,7 +104,7 @@
             <a
               data-width="500"
               data-url="/srv/service/customer/login-form"
-              href="#"
+              href="/uye_giris"
               class="fr text-center authorLink popupWin"
             ></a>
             <a
@@ -124,17 +124,17 @@
           <ul class="fl col-12 menu flexwrap">
             <li class="fl">
               <span class="fl d-flex drop-down-title"
-                ><a class="fl" lang="tr" href="/#/indirim">İndirim</a></span
+                ><a class="fl" lang="tr" href="/indirim">İndirim</a></span
               >
             </li>
             <li class="fl">
               <span class="fl d-flex drop-down-title"
-                ><a class="fl" lang="tr" href="/#/yeni">Yeni</a></span
+                ><a class="fl" lang="tr" href="/yeni">Yeni</a></span
               >
             </li>
             <li class="fl drop-down hover parentLink">
               <span class="fl d-flex drop-down-title"
-                ><a class="fl" lang="tr" href="/#/giyim">Giyim</a></span
+                ><a class="fl" lang="tr" href="/giyim">Giyim</a></span
               >
               <div
                 class="pos-a pos-top pos-left pos-right box p-left whiteBg box-border b-top subMenu top"
@@ -262,7 +262,7 @@
                         <li class="MenuSubBaslik">Edit</li>
                         <li class="fl col-12">
                           <a href="/denim-zamani" class="fl col-12"
-                            >Denim Zamanı<sup style="color:black">Yeni</sup></a
+                            >Denim Zamanı<sup style="color: black">Yeni</sup></a
                           >
                         </li>
                         <!--<li class="fl col-12"><a href="/kis-modasi" class="fl col-12">Kış Modası</a></li>-->
@@ -591,23 +591,23 @@ div {
 .menu li {
   float: left;
 }
-[dir="rtl"] .menu li {
+[dir='rtl'] .menu li {
   float: right;
 }
 .menu a {
   float: left;
   box-sizing: border-box;
 }
-[dir="rtl"] .menu a {
+[dir='rtl'] .menu a {
   float: right;
 }
 .menu li.parentLink > a {
   padding-right: 40px;
-  background-image: url("/theme/v4-freshscarfs/sub_theme/ust/firat/user_v4yeni/selectArrow.png");
+  background-image: url('/theme/v4-freshscarfs/sub_theme/ust/firat/user_v4yeni/selectArrow.png');
   background-repeat: no-repeat;
   background-position: right center;
 }
-[dir="rtl"] .menu li.parentLink > a {
+[dir='rtl'] .menu li.parentLink > a {
   padding-right: 20px;
   padding-left: 40px;
   background-position: 10px center;
@@ -622,7 +622,7 @@ div {
 .subMenu .dynamicMenu {
   background: #fff;
 }
-[dir="rtl"] .menu li.parentLink > ul {
+[dir='rtl'] .menu li.parentLink > ul {
   right: 0;
   left: auto;
 }
@@ -633,7 +633,7 @@ div {
   border-radius: 0;
 }
 #mainMenu .menu > li.hover:hover a:after {
-  content: "";
+  content: '';
   border-color: #ff000000 #00800000 #000000 #ffa50000;
   border-style: solid;
   border-width: 9px;
@@ -654,7 +654,7 @@ div {
   box-sizing: border-box;
   border-left: 10px solid #dedede;
 }
-[dir="rtl"] .menu li.parentLink li.parentLink ul {
+[dir='rtl'] .menu li.parentLink li.parentLink ul {
   float: right;
   border-right: 10px solid #dedede;
   border-left: 0;
@@ -705,7 +705,7 @@ button {
   -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 #logo a {
