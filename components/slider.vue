@@ -1,102 +1,331 @@
+--MANUKA 3 COMPONENT--
+
 <template>
-<div>
-    <transition-group name='fade' tag='div'>
-      <div v-for="i in [currentIndex]" :key='i'>
-        <img :src="currentImg" />
+  <div class="AnasayfaSlider">
+    <div class="col col-12">
+      <div class="row mb">
+        <div
+          class="fl col-12 owl-carousel owl-carousel2029 owl-theme owl-loaded owl-drag"
+        >
+          <div class="owl-stage-outer">
+            <div
+              class="owl-stage"
+              style="transform: translate3d(-7680px, 0px, 0px); transition: all 0.25s ease 0s; width: 28800px;"
+            >
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn1.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn4.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn2.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item active" style="width: 1920px;">
+                <div class="item">
+                  <a
+                    title=""
+                    href="/beyaz-gomlek-koleksiyonu"
+                    class="fl col-12"
+                  >
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg2.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 1920px;">
+                <div class="item">
+                  <a
+                    title=""
+                    href="/beyaz-gomlek-koleksiyonu"
+                    class="fl col-12"
+                  >
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg3.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 1920px;">
+                <div class="item">
+                  <a
+                    title=""
+                    href="/beyaz-gomlek-koleksiyonu"
+                    class="fl col-12"
+                  >
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg1.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn1.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn4.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn2.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a
+                    title=""
+                    href="/beyaz-gomlek-koleksiyonu"
+                    class="fl col-12"
+                  >
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg2.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a
+                    title=""
+                    href="/beyaz-gomlek-koleksiyonu"
+                    class="fl col-12"
+                  >
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg3.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a
+                    title=""
+                    href="/beyaz-gomlek-koleksiyonu"
+                    class="fl col-12"
+                  >
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg1.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 1920px;">
+                <div class="item">
+                  <a title="" href="/yeni-232" class="fl col-12">
+                    <img
+                      alt=""
+                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg"
+                      class="fl col-12"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-nav">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+          </div>
+          <div class="owl-dots disabled"></div>
+        </div>
       </div>
-    </transition-group>
-    <a class="prev" @click="prev" href='#'>&#10094;</a>
-  <a class="next" @click="next" href='#'>&#10095;</a>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "slider",
-  data() {
-    return {
-      images: [
-        'https://img.manuka.com.tr/Data/GorselVitrin/K3/kamppc.jpg',
-        'https://img.manuka.com.tr/Data/GorselVitrin/K3/inn1.jpg',
-        'https://img.manuka.com.tr/Data/GorselVitrin/K3/inn4.jpg',
-        'https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg'
-        ],
-      timer: null,
-      currentIndex: 0,
-    }
-  },
-  
-    mounted: function() {
-      this.startSlide();
-    },
-  
-    methods: {
-      startSlide: function() {
-        this.timer = setInterval(this.next, 4000);
-      },
-  
-  
-      next: function() {
-        this.currentIndex += 1
-      },
-      prev: function() {
-        this.currentIndex -= 1
-      }
-    },
-  
-    computed: {
-      currentImg: function() {
-        return this.images[Math.abs(this.currentIndex) % this.images.length];
-      }
-    }
-  
+<style scoped>
+.HomePage #content > .inner * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
-</script>
-
-<style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.9s ease;
-  overflow: hidden;
-  visibility: visible;
+.owl-theme .owl-nav {
+  margin-top: 10px;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav {
+  margin: 0 !important;
+}
+.owl-theme .owl-nav {
   position: absolute;
-  width:100%;
-  opacity: 1;
+  top: calc(50% - 15px);
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 0;
+  margin-top: 0;
 }
-.fade-enter,
-.fade-leave-to {
-  visibility: hidden;
-  width:100%;
-  opacity: 0;
-}
-img {
-height:600px;
-width:100%
-  }
-.prev, .next {
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #d6d6d6;
+  display: inline-block;
   cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.7s ease;
-  border-radius: 0 4px 4px 0;
-  text-decoration: none;
+  border-radius: 3px;
+}
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
-/* Position the "next button" to the right */
-.next {
-  right: 0;
+.owl-carousel .owl-nav .owl-prev {
+  float: left;
 }
-.prev {
-  left: 0;
+.owl-theme .owl-nav [class*="owl-"] {
+  width: 17px;
+  height: 32px;
+  text-indent: -9999em;
+  padding: 0;
+  background-color: transparent;
+  background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/img/arrows-2.png) !important;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
 }
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.9);
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  width: 17px;
+  height: 32px;
+  text-indent: -9999em;
+  padding: 0;
+  background-color: transparent;
+  background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/img/arrows-2.png) !important;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.owl-carousel .owl-nav .owl-next {
+  float: right;
+  background-position: right 0 !important;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  background: #000;
+  color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-button {
+  display: none;
 }
 </style>
-
