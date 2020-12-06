@@ -286,6 +286,7 @@
                               onclick="Add2Cart(3334, $('#subPro3334').val(), $('.detayAdet3334').val());"
                               class="col-12 fl"
                               id="addCartBtn"
+                              href="/sepetEkle"
                             >
                               Sepete Ekle
                             </a>

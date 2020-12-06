@@ -12,7 +12,9 @@
         class="pWin box whiteBg br5"
         id="myPopupWin"
       >
-        <div class="pClose close"></div>
+        <router-link to="/giyim"
+          ><div v-on:click="giyim" class="pClose close"></div
+        ></router-link>
         <div class="pText col col-12">
           <div class="row oh">
             <!--cache-->
@@ -36,7 +38,12 @@
                               value=""
                               class="col col-12 withHolder loadedPlace personaclick-initialized"
                             />
-                            <span class="col ease placeholder">E-Mail</span>
+                            <span
+                              class="col ease placeholder"
+                              :class="focus"
+                              @click="focusActive()"
+                              >E-Mail</span
+                            >
                           </div>
                         </div>
                       </li>
@@ -54,7 +61,12 @@
                       value=""
                       class="col col-12 withHolder loadedPlace"
                     />
-                    <span class="col ease placeholder">Şifre</span>
+                    <span
+                      class="col ease placeholder"
+                      :class="focus"
+                      @click="focusActive()"
+                      >Şifre</span
+                    >
                   </div>
                 </div>
                 <div
@@ -120,3 +132,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isFocus: false,
+    }
+  },
+  computed: {
+    focus() {
+      return this.isFocus ? 'focus' : ''
+    },
+  },
+  methods: {
+    focusActive() {
+      this.isFocus = !this.isFocus
+    },
+  },
+}
+</script>

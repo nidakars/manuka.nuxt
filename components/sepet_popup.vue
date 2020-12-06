@@ -2,13 +2,13 @@
 <template>
   <div
     class="pWrapper"
-    style="visibility: visible; display: block;"
+    style="visibility: visible; display: block"
     data-name="cartPopup"
   >
     <div class="flex">
-      <div class="pBg close" style="z-index:9980;"></div>
+      <div class="pBg close" style="z-index: 9980"></div>
       <div
-        style="width: 1000px; margin: 0px auto; z-index: 9981;"
+        style="width: 1000px; margin: 0px auto; z-index: 9981"
         class="pWin box whiteBg flexbox br5 withBtn"
         id="cartPopup"
       >
@@ -16,7 +16,7 @@
         <div class="pText col col-12">
           <div class="row oh">
             <div
-              style="visibility: visible;"
+              style="visibility: visible"
               id="basketWin"
               data-callback="basketReady"
               data-url="/srv/service/cart/load-win/3296"
@@ -105,9 +105,7 @@
                             </div>
                           </td>
 
-                          <td class="col-2 line-right dn-xs">
-                            349,90 TL
-                          </td>
+                          <td class="col-2 line-right dn-xs">349,90 TL</td>
                           <td
                             class="col-2 col-xs-4 line-right priceBasketProduct"
                           >
@@ -124,7 +122,7 @@
                     </table>
                     <div
                       class="col fr col-4 box-border b-top b-bottom"
-                      style="min-width:300px;"
+                      style="min-width: 300px"
                     >
                       <div class="row">
                         <div class="col col-12 line-bottom">
@@ -145,11 +143,24 @@
           </div>
         </div>
         <div class="pButtons">
-          <button data-id="0" class="btn btn-radius btn-success">
-            Alışverişe Devam</button
-          ><button data-id="1" class="btn btn-radius btn-success fr">
-            Sepete Git
-          </button>
+          <router-link to="/giyim">
+            <button
+              v-on:click="giyim"
+              data-id="0"
+              class="btn btn-radius btn-success"
+            >
+              Alışverişe Devam
+            </button>
+          </router-link>
+          <router-link to="/sepet">
+            <button
+              v-on:click="sepet"
+              data-id="1"
+              class="btn btn-radius btn-success fr"
+            >
+              Sepete Git
+            </button>
+          </router-link>
         </div>
       </div>
     </div>
