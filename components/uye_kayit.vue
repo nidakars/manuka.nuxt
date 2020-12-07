@@ -730,4 +730,108 @@
   height: 25px;
   line-height: 30px;
 }
+.icon-member-default:before {
+  content: '\e809';
+}
+[class^='icon-']:not(.icon-no-space):before,
+[class*=' icon-']:not(.icon-no-space):before {
+  margin-right: 8px;
+}
+.pageTitle i:before {
+  color: #000;
+}
+[class^='icon-']:before,
+[class*=' icon-']:before,
+[class^='icon-']:after,
+[class*=' icon-']:after,
+.icon-overlay:after {
+  line-height: 30px;
+  color: inherit;
+  font-family: 'tsoft', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-variant: normal;
+  text-align: center;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+.text-custom-pink,
+.active .text-custom-gray,
+.text-custom-gray.active,
+.text-custom-gray.like-btn:hover {
+  color: #000;
+}
+[class^='icon-']:not(.icon-no-space):before,
+[class*=' icon-']:not(.icon-no-space):before {
+  margin-right: 8px;
+}
+.icon-phone:before {
+  content: '\e80c';
+}
+.icon-lock:before {
+  content: '\e829';
+}
+.required {
+  background: url(https://www.manuka.com.tr/theme/v4-freshscarfs/sub_theme/form/firat/user_v4yeni/required.png)
+    no-repeat right center;
+}
+.form-control input[type='text'],
+.form-control input[type='password'],
+.form-control input[type='tel'],
+.form-control input[type='number'],
+.form-control select,
+.form-control textarea,
+.form input[type='text'],
+.form input[type='password'],
+.form input[type='tel'],
+.form input[type='number'],
+.form select,
+.form textarea {
+  background-color: #fff !important;
+  background-image: none !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.form-control input[type='text'],
+.form-control input[type='password'],
+.form-control select,
+.form-control textarea,
+.form input[type='text'],
+.form input[type='password'],
+.form select,
+.form textarea {
+  height: 20px;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-bottom: 0;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.form-control.large input[type='text'],
+.form-control.large input[type='password'],
+.form-control.large select,
+.form.large input[type='text'],
+.form.large input[type='password'],
+.form.large select {
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.myFlagIcon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 11px;
+  margin-top: -5px;
+  margin-left: -8px;
+  background-image: url(https://www.manuka.com.tr/theme/standart/images/blok/flags.png);
+  background-repeat: no-repeat;
+}
 </style>
