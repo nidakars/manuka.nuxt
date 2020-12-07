@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <slider></slider>
+    <Alider></Alider>
   </div>
 </template>
 
 <script>
-import slider from '@/components/slider.vue'
+import Alider from '@/components/slider1.vue'
 export default {
   components: {
-    slider,
+    Alider,
   },
 }
 </script>

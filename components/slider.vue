@@ -1,213 +1,332 @@
 --MANUKA 3 COMPONENT--
 
 <template>
-  <div class="AnasayfaSlider">
-    <div class="col col-12">
-      <div class="row mb">
-        <div
-          class="fl col-12 owl-carousel owl-carousel2029 owl-theme owl-loaded owl-drag"
-        >
-          <div class="owl-stage-outer">
-            <div
-              class="owl-stage"
-              style="transform: translate3d(-7680px, 0px, 0px); transition: all 0.25s ease 0s; width: 28800px;"
-            >
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn1.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn4.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn2.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item active" style="width: 1920px;">
-                <div class="item">
-                  <a
-                    title=""
-                    href="/beyaz-gomlek-koleksiyonu"
-                    class="fl col-12"
-                  >
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg2.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item" style="width: 1920px;">
-                <div class="item">
-                  <a
-                    title=""
-                    href="/beyaz-gomlek-koleksiyonu"
-                    class="fl col-12"
-                  >
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg3.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item" style="width: 1920px;">
-                <div class="item">
-                  <a
-                    title=""
-                    href="/beyaz-gomlek-koleksiyonu"
-                    class="fl col-12"
-                  >
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg1.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn1.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn4.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn2.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a
-                    title=""
-                    href="/beyaz-gomlek-koleksiyonu"
-                    class="fl col-12"
-                  >
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg2.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a
-                    title=""
-                    href="/beyaz-gomlek-koleksiyonu"
-                    class="fl col-12"
-                  >
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg3.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a
-                    title=""
-                    href="/beyaz-gomlek-koleksiyonu"
-                    class="fl col-12"
-                  >
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg1.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="owl-item cloned" style="width: 1920px;">
-                <div class="item">
-                  <a title="" href="/yeni-232" class="fl col-12">
-                    <img
-                      alt=""
-                      src="https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg"
-                      class="fl col-12"
-                    />
-                  </a>
+  <div class="contentWrapper col col-12" id="oneCol">
+    <div id="content" class="row">
+      <div class="inner">
+        <div id="mainColumn" class="fl col-12">
+          <script
+            type="text/javascript"
+            src="https://img.manuka.com.tr/theme/standart/js/gorsel_vitrin/owl/owl.autoplay.js"
+            defer=""
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://img.manuka.com.tr/theme/standart/js/gorsel_vitrin/owl/owl.navigation.js"
+            defer=""
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://img.manuka.com.tr/theme/standart/js/gorsel_vitrin/owl/owl.lazyload.js"
+            defer=""
+          ></script>
+
+          <div class="AnasayfaSlider">
+            <div class="col col-12">
+              <div class="row mb">
+                <div
+                  class="fl col-12 owl-carousel owl-carousel2029 owl-theme owl-loaded owl-drag"
+                >
+                  <div class="owl-stage-outer">
+                    <div
+                      class="owl-stage"
+                      style="
+                        transform: translate3d(-7882px, 0px, 0px);
+                        transition: all 0.25s ease 0s;
+                        width: 16890px;
+                      "
+                    >
+                      <div class="owl-item" style="width: 1126px">
+                        <div class="item">
+                          <a title="" href="/yeni-232" class="fl col-12">
+                            <img
+                              alt=""
+                              src="https://img.manuka.com.tr/Data/GorselVitrin/K3/n3.jpg"
+                              class="fl col-12"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 1126px">
+                        <div class="item">
+                          <a title="" href="/yeni-232" class="fl col-12">
+                            <img
+                              alt=""
+                              src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn1.jpg"
+                              class="fl col-12"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 1126px">
+                        <div class="item">
+                          <a title="" href="/yeni-232" class="fl col-12">
+                            <img
+                              alt=""
+                              src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn4.jpg"
+                              class="fl col-12"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 1126px">
+                        <div class="item">
+                          <a title="" href="/yeni-232" class="fl col-12">
+                            <img
+                              alt=""
+                              src="https://img.manuka.com.tr/Data/GorselVitrin/K3/inn2.jpg"
+                              class="fl col-12"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 1126px">
+                        <div class="item">
+                          <a
+                            title=""
+                            href="/beyaz-gomlek-koleksiyonu"
+                            class="fl col-12"
+                          >
+                            <img
+                              alt=""
+                              src="https://img.manuka.com.tr/Data/GorselVitrin/K3/bg2.jpg"
+                              class="fl col-12"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-nav">
+                    <div class="owl-prev">prev</div>
+                    <div class="owl-next">next</div>
+                  </div>
+                  <div class="owl-dots disabled"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="owl-nav">
-            <div class="owl-prev">prev</div>
-            <div class="owl-next">next</div>
-          </div>
-          <div class="owl-dots disabled"></div>
+
+          <center>
+            <div class="AnaBannerSatir inner flexwrap">
+              <a href="/yeni-soft-kis-renkleri" class="IkiliBannerSol fl"
+                ><img
+                  src="//www.manuka.com.tr/Data/EditorFiles/manuka_yeni/renklik%C4%B1s-son.jpg"
+                  alt="renklikıs-son.jpg (176 KB)"
+                  width="880"
+                  height="941"
+                  caption="false"
+              /></a>
+              <a href="/kahvenin-her-tonu" class="IkiliBannerSag fl"
+                ><img
+                  src="//www.manuka.com.tr/Data/EditorFiles/manuka_yeni/topraktonlar%C4%B1-son.jpg"
+                  alt="topraktonları-son.jpg (141 KB)"
+                  width="880"
+                  height="941"
+                  caption="false"
+              /></a>
+            </div>
+          </center>
+          <center>
+            <div class="AnaBannerSatir col-12 fl">
+              <a href="/beyaz-gomlek-koleksiyonu"
+                ><img
+                  src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/beyaz_gomlek/1-1.jpg"
+                  alt="1-1.jpg (117 KB)"
+                  width="1920"
+                  height="865"
+                  caption="false"
+              /></a>
+            </div>
+            <div class="AnaBannerSatir col-12 fl">
+              <a href="/beyaz-gomlek-koleksiyonu"
+                ><img
+                  src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/beyaz_gomlek/2.jpg"
+                  alt="2.jpg (85 KB)"
+                  width="1546"
+                  height="860"
+                  caption="false"
+              /></a>
+            </div>
+            <br />
+            <div class="AnaBannerSatir col-12 fl">
+              <a href="/beyaz-gomlek-koleksiyonu"
+                ><img
+                  src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/beyaz_gomlek/4.jpg"
+                  alt="4.jpg (112 KB)"
+                  width="1545"
+                  height="1027"
+                  caption="false"
+              /></a>
+            </div>
+            <br />
+            <div class="AnaBannerSatir col-12 fl">
+              <a href="/beyaz-gomlek-koleksiyonu"
+                ><img
+                  src="//www.manuka.com.tr/Data/EditorFiles/manuka_yeni/7.jpg"
+                  alt="7.jpg (121 KB)"
+                  width="1920"
+                  height="939"
+                  caption="false"
+              /></a>
+            </div>
+          </center>
+          <center>
+            <div class="AnaBannerSatir col-12 fl">
+              <a href="/yeni-232"
+                ><img
+                  src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/renklii.jpg"
+                  alt="renklii.jpg (279 KB)"
+                  width="1920"
+                  height="716"
+                  caption="false"
+              /></a>
+            </div>
+            <div class="AnaBannerSatir col-12 fl">
+              <div class="inner flexwrap AnaYeniSezonSatir">
+                <div class="AnaYeniSezonSol fl col-sm-12">
+                  <a href="/kaban-333"
+                    ><img
+                      src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/1gorsel-2.jpg"
+                      alt="1gorsel-2.jpg (201 KB)"
+                      width="675"
+                      height="898"
+                      caption="false"
+                  /></a>
+                </div>
+                <div class="AnaYeniSezonSag fr col-sm-12">
+                  <a href="/kaban-333">
+                    <span class="col-12 fl text-center AnaTextBaslik"
+                      >YENİ<br />SEZON</span
+                    >
+                    <span class="col-12 fl"
+                      ><img
+                        src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/2gorsel-2.jpg"
+                        alt="2gorsel-2.jpg (52 KB)"
+                        width="675"
+                        height="655"
+                        caption="false" /></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="AnaBannerSatir col-12 fl">
+              <a href="/sweatshirt-338"
+                ><img
+                  src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/1.jpg"
+                  alt="1.jpg (281 KB)"
+                  width="1920"
+                  height="1578"
+                  caption="false"
+              /></a>
+            </div>
+            <div class="AnaBannerSatir col-12 fl">
+              <div class="inner flexwrap AnaTrenckotSatir">
+                <div class="AnaTrenckotSol fl col-sm-12">
+                  <a href="/trenchkot">
+                    <span class="col-12 fl text-center AnaTextBaslik"
+                      >TRENÇKOT</span
+                    >
+                    <span class="col-12 fl text-center AnaTextAciklama"
+                      >Her mevsimde rahatlıkla<br />kullanabileceğin zamansız<br />trençkot
+                      koleksiyonunu incele.</span
+                    >
+                    <span class="col-12 fl"
+                      ><img
+                        src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/1gorsel.jpg"
+                        alt="1gorsel.jpg (176 KB)"
+                        width="675"
+                        height="900"
+                        caption="false" /></span
+                  ></a>
+                </div>
+                <div class="AnaTrenckotSag fr col-sm-12">
+                  <a href="/trenchkot"
+                    ><img
+                      src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/2gorsel.jpg"
+                      alt="2gorsel.jpg (204 KB)"
+                      width="675"
+                      height="1323"
+                      caption="false"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="AnaBannerSatir col-12 fl">
+              <div class="inner flexwrap AnaTrikoSatir">
+                <div class="AnaTrikoSol fl col-sm-12">
+                  <a href="/triko-325">
+                    <span class="col-12 fl"
+                      ><img
+                        src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/1gorsel-1.jpg"
+                        alt="1gorsel-1.jpg (135 KB)"
+                        width="675"
+                        height="606"
+                        caption="false"
+                    /></span>
+                    <span class="col-12 fl text-center AnaTextBaslik"
+                      >TRİKOLAR</span
+                    >
+                    <span class="col-12 fl text-center AnaTextAciklama"
+                      >Senin için yaz sezonuyla<br />özdeşleşmiş renkleri kış<br />parçalarıyla
+                      birleştirdik.</span
+                    >
+                  </a>
+                </div>
+                <div class="AnaTrikoSag fr col-sm-12">
+                  <a href="/triko-325"
+                    ><img
+                      src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/2gorsel-1.jpg"
+                      alt="2gorsel-1.jpg (188 KB)"
+                      width="675"
+                      height="900"
+                      caption="false"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="AnaBannerSatir col-12 fl">
+              <a href="/aksesuar-235"
+                ><img
+                  src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/corapp.jpg"
+                  alt="corapp.jpg (232 KB)"
+                  width="1920"
+                  height="964"
+                  caption="false"
+              /></a>
+            </div>
+            <div class="AnaBannerSatir col-12 fl">
+              <div class="inner flexwrap AnaCantaSatir">
+                <div class="AnaCantaSol fl col-sm-12">
+                  <a href="/aksesuar-235"
+                    ><span class="col-12 fl"
+                      ><img
+                        src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/1gorsel-3.jpg"
+                        alt="1gorsel-3.jpg (157 KB)"
+                        width="675"
+                        height="900"
+                        caption="false" /></span
+                  ></a>
+                </div>
+                <div class="AnaCantaSag fr col-sm-12">
+                  <a href="/aksesuar-235">
+                    <span class="col-12 fl"
+                      ><img
+                        src="https://img.manuka.com.tr/Data/EditorFiles/manuka_yeni/2gorsel-3.jpg"
+                        alt="2gorsel-3.jpg (120 KB)"
+                        width="675"
+                        height="724"
+                        caption="false"
+                    /></span>
+                    <span class="col-12 fl text-center AnaTextAciklama"
+                      >Görünümünü tamamlayacak<br />rengarenk çanta ve
+                      çoraplar.</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </center>
         </div>
       </div>
     </div>
@@ -239,7 +358,7 @@
   height: 0;
   margin-top: 0;
 }
-.owl-theme .owl-nav [class*="owl-"] {
+.owl-theme .owl-nav [class*='owl-'] {
   color: #fff;
   font-size: 14px;
   margin: 5px;
@@ -263,7 +382,7 @@
 .owl-carousel .owl-nav .owl-prev {
   float: left;
 }
-.owl-theme .owl-nav [class*="owl-"] {
+.owl-theme .owl-nav [class*='owl-'] {
   width: 17px;
   height: 32px;
   text-indent: -9999em;
@@ -275,7 +394,7 @@
   overflow: hidden;
   cursor: pointer;
 }
-.owl-theme .owl-nav [class*="owl-"] {
+.owl-theme .owl-nav [class*='owl-'] {
   color: #fff;
   font-size: 14px;
   margin: 5px;
@@ -296,7 +415,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-.owl-theme .owl-nav [class*="owl-"] {
+.owl-theme .owl-nav [class*='owl-'] {
   width: 17px;
   height: 32px;
   text-indent: -9999em;

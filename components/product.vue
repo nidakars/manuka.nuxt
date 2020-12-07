@@ -1131,6 +1131,8 @@ button {
 export default {
   data() {
     return {
+      size1: false,
+      size2: false,
       isActive: false,
     }
   },
@@ -1141,20 +1143,6 @@ export default {
     titleClasses() {
       return this.isActive ? 'active' : ''
     },
-  },
-  methods: {
-    toggleActive() {
-      this.isActive = !this.isActive
-    },
-  },
-
-  data() {
-    return {
-      size1: false,
-      size2: false,
-    }
-  },
-  computed: {
     size1Classes() {
       return this.size1 ? 'selected' : ''
     },
@@ -1168,6 +1156,9 @@ export default {
     },
     size2Active() {
       this.size2 = !this.size2
+    },
+    toggleActive() {
+      this.isActive = !this.isActive
     },
   },
 }
