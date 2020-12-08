@@ -5,22 +5,6 @@
     <div id="content" class="row">
       <div class="inner">
         <div id="mainColumn" class="fl col-12">
-          <script
-            type="text/javascript"
-            src="https://img.manuka.com.tr/theme/standart/js/gorsel_vitrin/owl/owl.autoplay.js"
-            defer=""
-          ></script>
-          <script
-            type="text/javascript"
-            src="https://img.manuka.com.tr/theme/standart/js/gorsel_vitrin/owl/owl.navigation.js"
-            defer=""
-          ></script>
-          <script
-            type="text/javascript"
-            src="https://img.manuka.com.tr/theme/standart/js/gorsel_vitrin/owl/owl.lazyload.js"
-            defer=""
-          ></script>
-
           <div class="AnasayfaSlider">
             <div class="col col-12">
               <div class="row mb">
@@ -415,6 +399,7 @@
   -ms-user-select: none;
   user-select: none;
 }
+
 .owl-theme .owl-nav [class*='owl-'] {
   width: 17px;
   height: 32px;

@@ -14,13 +14,10 @@
                       itemtype="http://data-vocabulary.org/Breadcrumb"
                       class="fl"
                     >
-                      <a
-                        href="https://www.manuka.com.tr/"
-                        title="Anasayfa"
-                        class="fl navHome"
-                        itemprop="url"
-                      >
-                        <span itemprop="title">Anasayfa ></span>
+                      <a title="Anasayfa" class="fl navHome" itemprop="url">
+                        <NuxtLink to="/"
+                          ><span itemprop="title">Anasayfa ></span>
+                        </NuxtLink>
                       </a>
                     </li>
                     <li
@@ -29,12 +26,15 @@
                       class="fl"
                     >
                       <a
-                        href="https://www.manuka.com.tr/giyim-316"
+                        
                         title="giyim-316"
                         itemprop="url"
                         class="fl"
                       >
-                        <span itemprop="title">Giyim</span>
+                      <NuxtLink to="/giyim"
+                          ><span itemprop="title">Giyim</span>
+                        </NuxtLink>
+                        
                       </a>
                     </li>
                   </ul>
@@ -56,7 +56,7 @@
                   </div>
                   <div class="fl col-12" id="filterWrapper">
                     <div
-                      style="visibility: visible;"
+                      style="visibility: visible"
                       id="filterPanel"
                       class="fl col-12 angularTemplate flexwrap"
                       data-callback="filtreReady"
@@ -305,11 +305,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   AÇIK HAKİ
@@ -332,11 +332,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   HARDAL-BEYAZ
@@ -359,11 +359,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KAHVERENGİ
@@ -386,11 +386,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   GRİ-KAHVE
@@ -413,11 +413,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BAKIR
@@ -440,11 +440,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   GRİ
@@ -467,11 +467,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   CAMEL
@@ -494,11 +494,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   VİZON BEYAZ
@@ -521,11 +521,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   MİNT
@@ -548,11 +548,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BİSKÜVİ
@@ -575,11 +575,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   SİYAH
@@ -602,11 +602,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KİREMİT
@@ -629,11 +629,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   EKRU
@@ -656,11 +656,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KUM BEJİ
@@ -683,11 +683,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BEJ
@@ -710,11 +710,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   VİZON
@@ -737,11 +737,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   AÇIK MAVİ
@@ -764,11 +764,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   SOMON
@@ -791,11 +791,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KOYU MAVİ
@@ -818,11 +818,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   OKYANUS
@@ -845,11 +845,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BEYAZ
@@ -872,11 +872,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   GÜLPEMBE
@@ -899,11 +899,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   HAKİ
@@ -926,11 +926,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   SİYAH-KAHVE
@@ -953,11 +953,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   HARDAL
@@ -980,11 +980,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BUZ GRİ
@@ -1007,11 +1007,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   YEŞİL
@@ -1034,11 +1034,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   HAKİ-BEYAZ
@@ -1061,11 +1061,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   TAŞ
@@ -1088,11 +1088,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   NİL YEŞİLİ
@@ -1115,11 +1115,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KAHVE
@@ -1142,11 +1142,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   ÇAĞLA
@@ -1169,11 +1169,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BORDO
@@ -1196,11 +1196,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   SİYAH-BEYAZ
@@ -1223,11 +1223,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   İNDİGO
@@ -1250,11 +1250,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   MULTİ
@@ -1277,11 +1277,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   CAMEL-BEYAZ
@@ -1304,11 +1304,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   PASTEL
@@ -1331,11 +1331,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   EKOSE
@@ -1358,11 +1358,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   SÜTLÜ KAHVE
@@ -1385,11 +1385,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   GÜL KURUSU
@@ -1412,11 +1412,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BOTANİK
@@ -1439,11 +1439,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   MAVİ
@@ -1466,11 +1466,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   ANTRASİT
@@ -1493,11 +1493,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   LACİVERT
@@ -1520,11 +1520,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   LEYLAK
@@ -1547,11 +1547,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   SARI
@@ -1574,11 +1574,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KİREMİT-HARDAL
@@ -1601,11 +1601,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   ŞEFTALİ
@@ -1628,11 +1628,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   ORTA MAVİ
@@ -1655,11 +1655,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   TURUNCU
@@ -1682,11 +1682,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KİREMİT-YEŞİL
@@ -1709,11 +1709,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   OFF WHITE
@@ -1736,11 +1736,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BEJ-CAMEL
@@ -1763,11 +1763,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   PUDRA
@@ -1790,11 +1790,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KİREMİT-BEYAZ
@@ -1817,11 +1817,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   GÜMÜŞ
@@ -1844,11 +1844,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   KAHVE-BEYAZ
@@ -1871,11 +1871,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   TATLI SARI
@@ -1898,11 +1898,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   BEYAZ-SİYAH
@@ -1925,11 +1925,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   LİLA-OFFWHITE
@@ -1952,11 +1952,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   SU YEŞİLİ
@@ -1979,11 +1979,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   PÖTİKARE MAVİ
@@ -2006,11 +2006,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   MİNT-OFF WHİTE
@@ -2033,11 +2033,11 @@
                                   <span class="fl icon-wrapper">
                                     <i
                                       class="fl icon-square-unchecked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                     <i
                                       class="fl icon-square-checked icon-small"
-                                      style="background-color:;"
+                                      style="background-color: "
                                     ></i>
                                   </span>
                                   LİLA
@@ -2350,17 +2350,17 @@
                                 >
                                   <div
                                     class="ui-slider-range ui-corner-all ui-widget-header"
-                                    style="left: 0%; width: 100%;"
+                                    style="left: 0%; width: 100%"
                                   ></div>
                                   <span
                                     tabindex="0"
                                     class="ui-slider-handle ui-corner-all ui-state-default"
-                                    style="left: 0%;"
+                                    style="left: 0%"
                                   ></span
                                   ><span
                                     tabindex="0"
                                     class="ui-slider-handle ui-corner-all ui-state-default"
-                                    style="left: 100%;"
+                                    style="left: 100%"
                                   ></span>
                                 </div>
                               </div>
