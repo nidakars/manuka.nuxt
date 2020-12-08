@@ -25,16 +25,10 @@
                       itemtype="http://data-vocabulary.org/Breadcrumb"
                       class="fl"
                     >
-                      <a
-                        
-                        title="giyim-316"
-                        itemprop="url"
-                        class="fl"
-                      >
-                      <NuxtLink to="/giyim"
+                      <a title="giyim" itemprop="url" class="fl">
+                        <NuxtLink to="/giyim"
                           ><span itemprop="title">Giyim</span>
                         </NuxtLink>
-                        
                       </a>
                     </li>
                   </ul>
@@ -68,10 +62,18 @@
                             <div class="TumKatBox">
                               <div
                                 class="col col-12 text-custom-gray text-semibold col-title filter-title"
+                                :class="kClasses"
+                                @click="Active()"
                               >
                                 KATEGORİLER
                               </div>
-                              <div class="fl col-12 fValuesBox fCatBox">
+                              <div
+                                class="fl col-12 fValuesBox fCatBox"
+                                style="display: block"
+                                :class="oClasses"
+                                v-show="isVisible"
+                                :style="sBlock"
+                              >
                                 <ul class="box col-12">
                                   <li class="fl col-12">
                                     <a
@@ -284,10 +286,18 @@
                         <div class="fl col-12">
                           <div
                             class="col col-12 text-custom-gray text-semibold col-title filter-title"
+                            :class="kClasses"
+                            @click="Active1()"
                           >
                             Renk
                           </div>
-                          <div class="box col-12 fValuesBox">
+                          <div
+                            class="box col-12 fValuesBox"
+                            style="display: block"
+                            :class="oClasses"
+                            v-show="isVisible"
+                            :style="sBlock"
+                          >
                             <div class="fl col-12 fVariantBox FilterScroll">
                               <div class="fl col-12 mb">
                                 <label
@@ -2396,11 +2406,13 @@
                 <div class="fl btnBar" id="pageLayout">
                   <span class="col ease">Görünüm:</span>
                   <span
-                    class="col ease blockBtn threeBlock active catalogBtn selectable"
+                    class="col ease blockBtn threeBlock active catalogBtn selected"
+                    @mousedown="three"
                     data-id="0"
                   ></span>
                   <span
                     class="col ease blockBtn fourBlock listBtn selectable"
+                    @mousedown="three"
                     data-id="2"
                   ></span>
                 </div>
@@ -2436,3 +2448,72 @@
 </template>
 
 <style scoped></style>
+
+<script>
+export default {
+  data() {
+    return {
+      isClick: false,
+      isR: false,
+    }
+  },
+  computed: {
+    isVisible() {
+      if (this.isClick) {
+        return this.isClick
+      }
+      if (this.isR) {
+        return this.isR
+      }
+    },
+    kClasses() {
+      if (this.isClick || !this.isClick) {
+        return this.isClick ? 'hidden' : ''
+      }
+      if (this.isR || !this.isR) {
+        return this.isR ? 'hidden' : ''
+      }
+    },
+    oClasses() {
+      if (this.isClick || !this.isClick) {
+        return this.isClick ? 'open' : ''
+      }
+      if (this.isR || !this.isR) {
+        return this.isR ? 'open' : ''
+      }
+    },
+    sBlock() {
+      if (this.isClick || !this.isClick) {
+        return this.isClick ? 'none' : ''
+      }
+      if (this.isR || !this.isR) {
+        return this.isR ? 'none' : ''
+      }
+    },
+  },
+  methods: {
+    three(event) {
+      var Target = event.target
+      Target.classList.add('active selected')
+      Target.classList.remove('selectable')
+      four.event.target.classList.remove('active')
+    },
+    four(event) {
+      var Target = event.target
+      Target.classList.add('active selected')
+      Target.classList.remove('selectable')
+      three.event.target.classList.remove('active')
+    },
+    loginTime(event) {
+      var Target = event.target
+      return Target.parentElement.classList.contains('active selected')
+    },
+    Active() {
+      this.isClick = !this.isClick
+    },
+    Active1() {
+      this.isR = !this.isR
+    },
+  },
+}
+</script>
