@@ -19,7 +19,7 @@
           <div class="row oh">
             <!--cache-->
             <div class="col col-12 loaderWrapper" id="popup-login">
-              <div @submit.prevent="userSignUp" class="col popupInnerBlock">
+              <div class="col popupInnerBlock">
                 <div class="box col-12 xlarge">
                   Üye giriş bilgilerini giriniz.
                 </div>
@@ -30,18 +30,20 @@
                         <div class="box col-12 form-control xlarge">
                           <div class="row input-icon tooltipWrapper">
                             <span class="icon icon-mail"></span>
-                            <label
+                            <input
+                              type="text"
+                              placeholder="E-Mail"
+                              name="pop-email"
+                              id="pop-email"
+                              value=""
+                              class="col col-12 withHolder loadedPlace personaclick-initialized"
+                            />
+                            <span
                               class="col ease placeholder"
                               :class="focus"
                               @click="focusActive()"
-                              for="email"
-                              >Email</label
+                              >E-Mail</span
                             >
-                            <input
-                              class="col col-12 withHolder loadedPlace personaclick-initialized"
-                              type="text"
-                              id="email"
-                            />
                           </div>
                         </div>
                       </li>
@@ -51,18 +53,15 @@
                 <div class="box col-12 form-control xlarge tooltipWrapper">
                   <div class="row input-icon tooltipWrapper">
                     <span class="icon icon-pass"></span>
-
                     <input
                       type="password"
                       placeholder="Şifre"
-                      name="password"
-                      id="password"
-                      v-model="password"
+                      name="pop-password"
+                      id="pop-password"
                       value=""
                       class="col col-12 withHolder loadedPlace"
                     />
                     <span
-                      for="password"
                       class="col ease placeholder"
                       :class="focus"
                       @click="focusActive()"
@@ -141,34 +140,14 @@ export default {
       isFocus: false,
     }
   },
-  data: function () {
-    return {
-      email: '',
-      password: '',
-    }
-  },
   computed: {
     focus() {
-      return this.isFocus ? 'focus' : ' '
+      return this.isFocus ? 'focus' : ''
     },
   },
   methods: {
     focusActive() {
       this.isFocus = !this.isFocus
-    },
-    userSignUp: function (err) {
-      this.$store
-        .dispatch('signUp', {
-          email: this.email,
-          password: this.password,
-        })
-        .then(() => {
-          this.email = ''
-          this.password = ''
-        })
-        .catch((err) => {
-          alert(err.message)
-        })
     },
   },
 }

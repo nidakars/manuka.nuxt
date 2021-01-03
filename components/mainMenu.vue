@@ -101,12 +101,12 @@
             id="headerRight"
           >
             <!--<a href="javascript:void(0);" class="AraBtn fr forDesktop"></a>-->
-            <nuxt-link
-              to="/uye_giris"
+            <a
               data-width="500"
               data-url="/srv/service/customer/login-form"
+              href="/uye_giris"
               class="fr text-center authorLink popupWin"
-            ></nuxt-link>
+            ></a>
             <a
               data-width="500"
               data-url="/srv/service/customer/login-form"

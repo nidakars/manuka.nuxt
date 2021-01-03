@@ -56,15 +56,15 @@
               Sil
             </div>
           </div>
-          <div class="box col-12 d-flex line-top productRow">
+          <div  v-for="item in basket" :key="'basket'+item.id" class="box col-12 d-flex line-top productRow">
             <div class="box col-2 col-sm-3 col-xs-4 productImg">
               <div class="col col-12">
                 <div class="row">
                   <div class="fl image-wrapper">
                     <div class="imgInner">
                       <img
-                        src="https://www.manuka.com.tr/tuylu-oversize-kaban-pudra-dis-giyim-13437-32-K.jpg"
-                        alt="TÜYLÜ OVERSİZE KABAN PUDRA PUDRA 2"
+                        :src="item.product.image"
+                        alt="item.product.title"
                       />
                     </div>
                   </div>
@@ -74,19 +74,19 @@
             <div class="col col-5 col-sm-9 col-xs-8 productInfoRow">
               <span class="fl col-12 basketProName">
                 <a
-                  href="/"
+                  :href="'/urun-detay/' + item.product.id"
                   class="fl col-12 text-title text-bold text-upper dn-sm"
                 ></a>
-                <a
-                  href="tuylu-oversize-kaban-pudra"
-                  class="fl col-12 col-sm-7 text-description"
-                  target="_blank"
-                  >TÜYLÜ OVERSİZE KABAN PUDRA</a
+                
+                <nuxt-link :to="'/urun-detay/' + item.product.id" class="fl col-12 col-sm-7 text-description" target="_blank">
+                
+                  
+                  >{{ item.product.title }} ( {{ item.size }} )</nuxt-link
                 >
 
                 <div class="box col-sm-5 text-center AdetFiyatBox">
                   <span class="text-custom-gray">
-                    349,90 TL
+                   {{item.product.price}}
                   </span>
                 </div>
               </span>
@@ -111,7 +111,7 @@
                     id="Adet0"
                     name="Adet0"
                     data-cart-id="0"
-                    value="1"
+                    :value="item.count"
                     class="col-4 qty"
                   />
                   <!-- <a title="+" data-id="0" data-cart-id="0" data-callback="qtyChange" class="col-4 d-flex incBasketProduct">
@@ -122,180 +122,22 @@
 
               <div class="box col-6 text-center AdetFiyatBox dn-sm">
                 <span class="text-custom-gray">
-                  349,90 TL
+                   {{item.product.price}}
                 </span>
               </div>
             </div>
             <div class="box col-1 col-sm-8 mSilFavori">
               <a
                 class="fr btn-custom-light-gray icon-cancel icon-small icon-no-space text-center removeBtn"
-                onclick="Cart.delete(0, 'deleteCallback')"
+                @click="removeBasketItem(item.id)"
                 alt="0"
                 ><span class="mSilText">Sil</span></a
               >
               <input type="hidden" id="cartproduct_id" value="3296" />
             </div>
           </div>
-          <div class="box col-12 d-flex line-top productRow">
-            <div class="box col-2 col-sm-3 col-xs-4 productImg">
-              <div class="col col-12">
-                <div class="row">
-                  <div class="fl image-wrapper">
-                    <div class="imgInner">
-                      <img
-                        src="https://www.manuka.com.tr/kapsonlu-poplin-gomlek-off-white-gomlek-14828-33-K.jpg"
-                        alt="JULIET KAPÜŞONLU POPLİN GÖMLEK OFF WHITE OFF WHITE 1"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col col-5 col-sm-9 col-xs-8 productInfoRow">
-              <span class="fl col-12 basketProName">
-                <a
-                  href="/"
-                  class="fl col-12 text-title text-bold text-upper dn-sm"
-                ></a>
-                <a
-                  href="kapsonlu-poplin-gomlek-off-white"
-                  class="fl col-12 col-sm-7 text-description"
-                  target="_blank"
-                  >JULIET KAPÜŞONLU POPLİN GÖMLEK OFF WHITE</a
-                >
-
-                <div class="box col-sm-5 text-center AdetFiyatBox">
-                  <span class="text-custom-gray">
-                    159,90 TL
-                  </span>
-                </div>
-              </span>
-
-              <span class="fl col-12 p-bottom dn-sm">
-                <span class="row"> </span>
-              </span>
-            </div>
-            <div class="fl col-4 col-sm-9 col-xs-8 d-flex productPrcRow">
-              <div
-                class="box col-6 bAdetBox"
-                data-product="3342"
-                data-subproduct="3346"
-              >
-                <div class="fl col-md-12 qtyBtns" data-increment="1">
-                  <!--<a title="-" data-id="1" data-cart-id="1" data-callback="qtyChange" class="col-4 d-flex decBasketProduct">
-                                        <p class="fl col-12 icon-minus icon-no-space text-center p-bottom"></p>
-                                    </a>-->
-                  <div class="bAdet fl">Adet :</div>
-                  <input
-                    type="text"
-                    id="Adet1"
-                    name="Adet1"
-                    data-cart-id="1"
-                    value="1"
-                    class="col-4 qty"
-                  />
-                  <!-- <a title="+" data-id="1" data-cart-id="1" data-callback="qtyChange" class="col-4 d-flex incBasketProduct">
-                                        <p class="fl col-12 icon-plus icon-no-space text-center p-bottom"></p>
-                                    </a>-->
-                </div>
-              </div>
-
-              <div class="box col-6 text-center AdetFiyatBox dn-sm">
-                <span class="text-custom-gray">
-                  159,90 TL
-                </span>
-              </div>
-            </div>
-            <div class="box col-1 col-sm-8 mSilFavori">
-              <a
-                class="fr btn-custom-light-gray icon-cancel icon-small icon-no-space text-center removeBtn"
-                onclick="Cart.delete(1, 'deleteCallback')"
-                alt="1"
-                ><span class="mSilText">Sil</span></a
-              >
-              <input type="hidden" id="cartproduct_id" value="3342" />
-            </div>
-          </div>
-          <div class="box col-12 d-flex line-top productRow">
-            <div class="box col-2 col-sm-3 col-xs-4 productImg">
-              <div class="col col-12">
-                <div class="row">
-                  <div class="fl image-wrapper">
-                    <div class="imgInner">
-                      <img
-                        src="https://www.manuka.com.tr/gul-uclu-kolye-acik-sari-kolye-0-14926-36-K.jpg"
-                        alt="GÜL UÇLU KOLYE AÇIK SARI AÇIK SARI STD"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col col-5 col-sm-9 col-xs-8 productInfoRow">
-              <span class="fl col-12 basketProName">
-                <a
-                  href="/"
-                  class="fl col-12 text-title text-bold text-upper dn-sm"
-                ></a>
-                <a
-                  href="gul-uclu-kolye-acik-sari"
-                  class="fl col-12 col-sm-7 text-description"
-                  target="_blank"
-                  >GÜL UÇLU KOLYE AÇIK SARI</a
-                >
-
-                <div class="box col-sm-5 text-center AdetFiyatBox">
-                  <span class="text-custom-gray">
-                    29,90 TL
-                  </span>
-                </div>
-              </span>
-
-              <span class="fl col-12 p-bottom dn-sm">
-                <span class="row"> </span>
-              </span>
-            </div>
-            <div class="fl col-4 col-sm-9 col-xs-8 d-flex productPrcRow">
-              <div
-                class="box col-6 bAdetBox"
-                data-product="3634"
-                data-subproduct="3809"
-              >
-                <div class="fl col-md-12 qtyBtns" data-increment="1">
-                  <!--<a title="-" data-id="2" data-cart-id="2" data-callback="qtyChange" class="col-4 d-flex decBasketProduct">
-                                        <p class="fl col-12 icon-minus icon-no-space text-center p-bottom"></p>
-                                    </a>-->
-                  <div class="bAdet fl">Adet :</div>
-                  <input
-                    type="text"
-                    id="Adet2"
-                    name="Adet2"
-                    data-cart-id="2"
-                    value="1"
-                    class="col-4 qty"
-                  />
-                  <!-- <a title="+" data-id="2" data-cart-id="2" data-callback="qtyChange" class="col-4 d-flex incBasketProduct">
-                                        <p class="fl col-12 icon-plus icon-no-space text-center p-bottom"></p>
-                                    </a>-->
-                </div>
-              </div>
-
-              <div class="box col-6 text-center AdetFiyatBox dn-sm">
-                <span class="text-custom-gray">
-                  29,90 TL
-                </span>
-              </div>
-            </div>
-            <div class="box col-1 col-sm-8 mSilFavori">
-              <a
-                class="fr btn-custom-light-gray icon-cancel icon-small icon-no-space text-center removeBtn"
-                onclick="Cart.delete(2, 'deleteCallback')"
-                alt="2"
-                ><span class="mSilText">Sil</span></a
-              >
-              <input type="hidden" id="cartproduct_id" value="3634" />
-            </div>
-          </div>
+      
+    
           <input type="hidden" name="AltUrun[]" id="AltUrun[]" value="" />
         </div>
 
@@ -357,7 +199,7 @@
                       Sepet Toplamı
                     </div>
                     <div class="box col-6 a-right">
-                      539,70 TL
+                   {{ subtotal }} TL
                     </div>
                   </div>
 
@@ -369,7 +211,7 @@
                       Genel Toplam
                     </div>
                     <div class="box col-6 a-right">
-                      539,70 TL
+                      {{ total }} TL
                     </div>
                   </div>
                 </div>
@@ -466,3 +308,47 @@
     </form>
   </div>
 </template>
+
+<script>
+
+export default {
+  data: () => {
+    return {
+
+    };
+  },
+  created() {
+
+  },
+  computed: {
+    basket(){
+      return this.$store.getters['basket/getBasketItems'];
+    },
+    subtotal(){
+      let total = 0;
+      for (let i = 0; i < this.basket.length; i++) {
+        total += this.basket[i].product.price;
+      }
+      return total.toFixed(2);
+    },
+    total() {
+      let total = 0;
+      for (let i = 0; i < this.basket.length; i++) {
+        total += (this.basket[i].product.price * this.basket[i].count);
+      }
+      return total.toFixed(2);
+    }
+  },
+  methods: {
+    removeBasketItem(id){
+      this.$store.dispatch('basket/removeBasketItem', id);
+    },
+    increase(id){
+      this.$store.dispatch('basket/increaseBasketItem', id);
+    },
+    decrease(id){
+      this.$store.dispatch("basket/decreaseBasketItem", id);
+    }
+  }
+}
+</script>

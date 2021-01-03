@@ -43,7 +43,7 @@
                       cellpadding="0"
                       class="col-12 box-border b-bottom"
                     >
-                      <tbody class="col-12">
+                      <tbody v-for="item in basket" :key="'basket'+item.id" class="col-12">
                         <tr class="line-bottom">
                           <td class="col-1 col-xs-2 fw700 line-right">Ürün</td>
                           <td class="col-4 col-xs-6 fw700 line-right">
@@ -58,15 +58,15 @@
                           </td>
                           <td class="col-1 fw700 dn-xs">Sil</td>
                         </tr>
-                        <tr class="line-bottom row3296">
+                        <tr v-for="item in basket" :key="'basket'+item.id" class="line-bottom row3296">
                           <td class="col-1 col-xs-2 line-right">
                             <img
-                              src="https://www.manuka.com.tr/tuylu-oversize-kaban-pudra-dis-giyim-13437-32-K.jpg"
+                              :src="item.product.image"
                             />
                           </td>
                           <td class="col-4 col-xs-6 fw600 line-right">
                             <span class="fl"
-                              >TÜYLÜ OVERSİZE KABAN PUDRA PUDRA 2</span
+                              >{{item.product.title}}</span
                             >
                           </td>
                           <td
@@ -82,7 +82,8 @@
                                   title="-"
                                   data-id="3296"
                                   data-cart-id="0"
-                                  class="decBasketProduct"
+                                  @click="decrease(item.id)"
+                                   class="decBasketProduct"
                                 >
                                   <p>-</p>
                                 </a>
@@ -90,13 +91,14 @@
                                   type="text"
                                   id="Adet3296"
                                   name="Adet3296"
-                                  value="1"
+                                  :value="item.count"
                                   class="qtyBasketProduct"
                                 />
                                 <a
                                   title="+"
                                   data-id="3296"
                                   data-cart-id="0"
+                                  @click="increase(item.id)"
                                   class="incBasketProduct"
                                 >
                                   <p>+</p>
@@ -105,11 +107,11 @@
                             </div>
                           </td>
 
-                          <td class="col-2 line-right dn-xs">349,90 TL</td>
+                          <td class="col-2 line-right dn-xs">{{product.price}} TL</td>
                           <td
                             class="col-2 col-xs-4 line-right priceBasketProduct"
                           >
-                            349,90 TL
+                            {{product.price}}TL
                           </td>
                           <td class="col-1 dn-xs">
                             <a
@@ -130,7 +132,7 @@
                             <div class="box col-6 fw600">Sepet Toplamı</div>
                             <div class="box col-1 fw600">:</div>
                             <div class="box col-4 tar totalBasketPrice">
-                              349,90 TL
+                              {{total}}TL
                             </div>
                           </div>
                         </div>
@@ -172,3 +174,47 @@
   text-align: right;
 }
 </style>
+
+<script>
+
+export default {
+  data: () => {
+    return {
+
+    };
+  },
+  created() {
+
+  },
+  computed: {
+    basket(){
+      return this.$store.getters['basket/getBasketItems'];
+    },
+    subtotal(){
+      let total = 0;
+      for (let i = 0; i < this.basket.length; i++) {
+        total += this.basket[i].product.price;
+      }
+      return total.toFixed(2);
+    },
+    total() {
+      let total = 0;
+      for (let i = 0; i < this.basket.length; i++) {
+        total += (this.basket[i].product.price * this.basket[i].count);
+      }
+      return total.toFixed(2);
+    }
+  },
+  methods: {
+    removeBasketItem(id){
+      this.$store.dispatch('basket/removeBasketItem', id);
+    },
+    increase(id){
+      this.$store.dispatch('basket/increaseBasketItem', id);
+    },
+    decrease(id){
+      this.$store.dispatch("basket/decreaseBasketItem", id);
+    }
+  }
+}
+</script>
