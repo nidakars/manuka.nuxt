@@ -43,7 +43,7 @@
                       cellpadding="0"
                       class="col-12 box-border b-bottom"
                     >
-                      <tbody v-for="item in basket" :key="'basket'+item.id" class="col-12">
+                      <tbody class="col-12">
                         <tr class="line-bottom">
                           <td class="col-1 col-xs-2 fw700 line-right">Ürün</td>
                           <td class="col-4 col-xs-6 fw700 line-right">
