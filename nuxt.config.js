@@ -1,4 +1,5 @@
 export default {
+
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
         title: 'nuxt_man',
@@ -16,7 +17,10 @@ export default {
     css: ["../assets/styles/styles.css"],
 
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-    plugins: [],
+    plugins: [
+        '~/plugins/firebase.js',
+        '~/plugins/fireauth.js'
+    ],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
     components: true,
