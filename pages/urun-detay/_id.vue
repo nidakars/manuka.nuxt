@@ -199,8 +199,7 @@
                               data-group-id="2"
                               data-target="3334"
                               class="col"
-                              :class="size1Classes"
-                              @click="size1Active()"
+                              @click="size='1'" :class="size==='1'?'selected':' '" 
                             >
                               <p>1</p>
                               <span class=""></span>
@@ -211,8 +210,7 @@
                               data-group-id="2"
                               data-target="3334"
                               class="col"
-                              :class="size2Classes"
-                              @click="size2Active()"
+                              @click="size='2'" :class="size==='2'?'selected':' '" 
                             >
                               <p>2</p>
                               <span class=""></span>
@@ -462,8 +460,6 @@
 export default {
   data() {
     return {
-      size1: false,
-      size2: false,
       isActive: false,
       count: 1,
       size: 1
@@ -481,23 +477,11 @@ export default {
     titleClasses() {
       return this.isActive ? 'active' : ''
     },
-    size1Classes() {
-      return this.size1 ? 'selected' : ''
-    },
-    size2Classes() {
-      return this.size2 ? 'selected' : ''
-    },
     product(){
       return this.$store.getters['product/getProduct'];
     },
   },
   methods: {
-    size1Active() {
-      this.size1 = !this.size1
-    },
-    size2Active() {
-      this.size2 = !this.size2
-    },
     toggleActive() {
       this.isActive = !this.isActive
     },

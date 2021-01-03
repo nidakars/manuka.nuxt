@@ -116,7 +116,7 @@
               ><span class="favSayi"></span
             ></a>
             <a href="/sepet" class="fr basketLink" id="cart-soft-count">
-              <span class="cart-soft-count">0</span>
+              <span class="cart-soft-count " color="white"> {{ totalBasketItemCount > 0 ? ""+totalBasketItemCount+"" : "" }}</span>
             </a>
           </div>
         </div>
@@ -790,3 +790,31 @@ ul {
   list-style-type: none;
 }
 </style>
+<script>
+
+export default {
+  data: () => {
+    return {
+
+    };
+  },
+  created() {
+
+  },
+  computed: {
+    basket(){
+      return this.$store.getters['basket/getBasketItems'];
+    },
+    totalBasketItemCount(){
+      let count = 0;
+      for (let i = 0; i< this.basket.length; i++) {
+        count += this.basket[i].count;
+      }
+      return count;
+    }
+  },
+  methods: {
+  }
+}
+</script>
+

@@ -107,11 +107,11 @@
                             </div>
                           </td>
 
-                          <td class="col-2 line-right dn-xs">{{product.price}} TL</td>
+                          <td class="col-2 line-right dn-xs">{{item.product.price}} TL</td>
                           <td
                             class="col-2 col-xs-4 line-right priceBasketProduct"
                           >
-                            {{product.price}}TL
+                            {{item.product.price}}TL
                           </td>
                           <td class="col-1 dn-xs">
                             <a

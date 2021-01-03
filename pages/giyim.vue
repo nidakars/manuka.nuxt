@@ -60,7 +60,7 @@
                               title="EKOSE ASTARLI CEKET MAVİ"
                               class="col col-12 text-description detailLink productTitle"
                               data-id="3334"
-                              >{{product.item}}</nuxt-link
+                              >{{product.title}}</nuxt-link
                             >
                             <a
                               data-width="500"
