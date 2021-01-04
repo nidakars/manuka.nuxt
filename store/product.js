@@ -12,7 +12,7 @@ export const mutations = {
     },
     setProduct(state, product) {
         state.product = product;
-    }
+    },
 };
 export const actions = {
     // initData({ state, commit }, ) {
@@ -32,7 +32,7 @@ export const actions = {
         return new Promise((resolve, reject) => {
 
             firebase.database().ref('/products').once('value').then((snapshot) => {
-
+                console.log(snapshot.val());
                 commit('setProducts', snapshot.val())
             });
         })

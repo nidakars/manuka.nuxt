@@ -7,7 +7,7 @@
 import Sepet from '@/components/sepet.vue'
 
 export default {
-  name: 'app',
+  name: 'sepet',
   components: {
     Sepet,
   },

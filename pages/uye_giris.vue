@@ -9,6 +9,7 @@
 <script>
 import giris from '@/components/uye_giris.vue'
 export default {
+  name: "Giris",
   components: {
     giris,
   },

@@ -115,9 +115,9 @@
               id="favoribtn"
               ><span class="favSayi"></span
             ></a>
-            <a href="/sepet" class="fr basketLink" id="cart-soft-count">
-              <span class="cart-soft-count " color="white"> {{ totalBasketItemCount > 0 ? ""+totalBasketItemCount+"" : "" }}</span>
-            </a>
+            <nuxt-link to="/sepet" class="fr basketLink" id="cart-soft-count">
+              <span class="cart-soft-count " color="white"> {{ totalBasketItemCount }}</span>
+            </nuxt-link>
           </div>
         </div>
         <nav class="fl col-12 forDesktop" id="mainMenu">

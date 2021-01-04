@@ -9,6 +9,7 @@
 <script>
 import kayit from '@/components/uye_kayit.vue'
 export default {
+  name: "Kayit",
   components: {
     kayit,
   },

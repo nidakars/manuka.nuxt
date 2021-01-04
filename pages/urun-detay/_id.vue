@@ -25,11 +25,11 @@
             <div class="fl col-12">
               <div class="col col-12">
                 <div class="row mb loaderWrapper">
-                  <ul id="productImage" class="fl col-12">
-                    <li class="col-6 col-sm-12 fl">
+                  <ul id="productImage" class="fl col-12"  v-if="typeof product.image !== 'string'">
+                    <li class="col-6 col-sm-12 fl" v-for="productImage in product.image" :key="'productimage' + productImage">
                       <a
                         data-id="13403"
-                        href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13403-33-B.jpg"
+                        href="javascript:;"
                         data-lightbox="product"
                         data-index="0"
                         class="image-wrapper fl"
@@ -38,64 +38,33 @@
                       >
                         <span class="imgInner">
                           <img
-                            src="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13403-33-O.jpg"
+                            :src="productImage"
                             alt="EKOSE ASTARLI CEKET MAVİ"
                             title="EKOSE ASTARLI CEKET MAVİ"
                           />
                         </span>
                       </a>
                     </li>
+                    <!-- <div class="col-12 slideControl">
+<span id="prevImage" class="fl colPrev icon-arrow-left icon-no-space icon-custom-gray"></span>
+<span id="nextImage" class="fr colNext icon-arrow-right icon-no-space icon-custom-gray"></span>
+</div>
+-->
+                  </ul>
+                  <ul id="productImage" class="fl col-12"  v-else>
                     <li class="col-6 col-sm-12 fl">
                       <a
-                        data-id="13404"
-                        href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13404-33-B.jpg"
+                        data-id="13403"
+                        href="javascript:;"
                         data-lightbox="product"
-                        data-index="1"
+                        data-index="0"
                         class="image-wrapper fl"
-                        data-href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13404-33-B.jpg"
-                        data-standard="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13404-33-B.jpg"
+                        data-href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13403-33-B.jpg"
+                        data-standard="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13403-33-B.jpg"
                       >
                         <span class="imgInner">
                           <img
-                            src="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13404-33-O.jpg"
-                            alt="EKOSE ASTARLI CEKET MAVİ"
-                            title="EKOSE ASTARLI CEKET MAVİ"
-                          />
-                        </span>
-                      </a>
-                    </li>
-                    <li class="col-6 col-sm-12 fl">
-                      <a
-                        data-id="13405"
-                        href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13405-33-B.jpg"
-                        data-lightbox="product"
-                        data-index="2"
-                        class="image-wrapper fl"
-                        data-href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13405-33-B.jpg"
-                        data-standard="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13405-33-B.jpg"
-                      >
-                        <span class="imgInner">
-                          <img
-                            src="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13405-33-O.jpg"
-                            alt="EKOSE ASTARLI CEKET MAVİ"
-                            title="EKOSE ASTARLI CEKET MAVİ"
-                          />
-                        </span>
-                      </a>
-                    </li>
-                    <li class="col-6 col-sm-12 fl">
-                      <a
-                        data-id="13406"
-                        href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13406-33-B.jpg"
-                        data-lightbox="product"
-                        data-index="3"
-                        class="image-wrapper fl"
-                        data-href="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13406-33-B.jpg"
-                        data-standard="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13406-33-B.jpg"
-                      >
-                        <span class="imgInner">
-                          <img
-                            src="https://img.manuka.com.tr/ekose-astarli-ceket-mavi-ceket-0-13406-33-O.jpg"
+                            :src="product.image"
                             alt="EKOSE ASTARLI CEKET MAVİ"
                             title="EKOSE ASTARLI CEKET MAVİ"
                           />
@@ -458,6 +427,7 @@
 
 <script>
 export default {
+  name: "ProductDetail",
   data() {
     return {
       isActive: false,
@@ -468,8 +438,20 @@ export default {
   },
   created() {
     const id = this.$route.params.id;
-    // this.$store.dispatch("product/fetchProducts");
-    this.$store.dispatch("product/SetProduct", parseInt(id));
+    this.$store.dispatch("product/fetchProducts");
+    const parsedId = parseInt(id);
+    if(parsedId != id) {
+        this.$router.push({path: "giyim"});
+
+    }else{
+      this.$store.dispatch("product/SetProduct", parsedId); 
+      const product = this.$store.getters["product/getProduct"];
+      if(product === null || product == undefined) {
+        this.$router.push({path: "giyim"});
+        return false;
+     }
+    }
+    
   },
   computed: {
     isContentVisible() {
@@ -479,8 +461,12 @@ export default {
       return this.isActive ? 'active' : ''
     },
     product(){
-      
-      return this.$store.getters['product/getProduct'];
+      const product =  this.$store.getters['product/getProduct'];
+      if(product == null) {
+         this.$router.push({path: "giyim"});
+         return product;
+      }
+      return product;
     },
   },
   methods: {
@@ -493,7 +479,7 @@ export default {
       }
     },
 
-    addBasket() {
+    addBasket(e) {
       const payload = {
         id: Math.random() * 1000,
         count: this.count,
@@ -501,7 +487,8 @@ export default {
         product: this.product
       };
     
-   this.$store.dispatch('basket/addBasket', payload);
+      this.$store.dispatch('basket/addBasket', payload);
+      this.$router.push({path: "sepetEkle"})
     }
   },
 }

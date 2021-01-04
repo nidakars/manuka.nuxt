@@ -6,7 +6,7 @@
     data-name="myPopupWin"
   >
     <div class="flex">
-      <div class="pBg close" style="z-index: 9980"></div>
+      <nuxt-link class="pBg close" to="/giyim" ></nuxt-link>
       <div
         style="width: 500px; margin: 0 auto; z-index: 9981"
         class="pWin box whiteBg br5"

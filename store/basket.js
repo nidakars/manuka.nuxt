@@ -18,7 +18,7 @@ export const mutations = {
 export const actions = {
     addBasket({ state, commit }, data) {
         for (let i = 0; i < state.items.length; i++) {
-            if (state.items[i].product.id === data.product.id && state.items[i].color === data.color) {
+            if (state.items[i].product.id === data.product.id && state.items[i].size === data.size) {
                 commit('increase', i);
                 return true;
             }

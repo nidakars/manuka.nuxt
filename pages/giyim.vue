@@ -149,7 +149,7 @@
 <script>
 import leftMenu from '@/components/leftMenu'
 export default {
-  name: 'app',
+  name: 'giyim',
   data: () => {
     return {loading:false}
   },
