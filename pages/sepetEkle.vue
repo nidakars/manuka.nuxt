@@ -12,7 +12,7 @@
         class="pWin box whiteBg flexbox br5 withBtn"
         id="cartPopup"
       >
-        <div class="pClose close"></div>
+        <nuxt-link class="pClose close" to="/giyim"></nuxt-link>
         <div class="pText col col-12">
           <div class="row oh">
             <div
@@ -145,24 +145,27 @@
           </div>
         </div>
         <div class="pButtons">
-          <router-link to="/giyim">
+          <nuxt-link to="/giyim">
+           <!-- v-on:click="giyim" -->
             <button
-              v-on:click="giyim"
+             
               data-id="0"
               class="btn btn-radius btn-success"
             >
               Alışverişe Devam
             </button>
-          </router-link>
-          <router-link to="/sepet">
+          </nuxt-link>
+          <nuxt-link to="/sepet">
+          <!-- v-on:click="sepet"
+           -->
             <button
-              v-on:click="sepet"
+              
               data-id="1"
               class="btn btn-radius btn-success fr"
             >
               Sepete Git
             </button>
-          </router-link>
+          </nuxt-link>
         </div>
       </div>
     </div>

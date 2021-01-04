@@ -12,7 +12,8 @@
         class="pWin box whiteBg flexbox br5 withBtn"
         id="cartPopup"
       >
-        <div class="pClose close"></div>
+        <!-- <div class="pClose close"></div> -->
+        <nuxt-link class="pClose close" to="/giyim"></nuxt-link>
         <div class="pText col col-12">
           <div class="row oh">
             <div

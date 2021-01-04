@@ -14,6 +14,7 @@
                 </div>
               </div>
             </div>
+            <form @submit.prevent="register">
             <div class="box col-12 p-left" id="uye-kayit-form">
               <div class="row">
                 <div class="col col-12"></div>
@@ -390,11 +391,12 @@
                           name="email"
                           id="email"
                           autocapitalize="off"
+                          v-model="email"
                           class="col col-12 required withHolder loadedPlace personaclick-initialized"
                         />
                         <span id="eposta_hata"></span>
                         <span id="kayitli_eposta"></span>
-                        <span class="col ease placeholder">E-Mail</span>
+                        <span class="col ease placeholder" :class="focus" @click="focusActive()">E-Mail</span>
                       </div>
                     </div>
                     <div
@@ -587,9 +589,11 @@
                           placeholder="Şifre"
                           name="password"
                           id="password"
+                          v-model="password"
                           class="col col-12 required withHolder loadedPlace"
                         />
-                        <span class="col ease placeholder">Şifre</span>
+                        <span class="col ease placeholder" :class="focus"
+                              @click="focusActive()">Şifre</span>
                       </div>
                     </div>
                     <div
@@ -682,7 +686,7 @@
                     </div>
                     <div class="col col-12">
                       <div class="row">
-                        <a
+                        <a type="submit"
                           id="uye-kayit-btn"
                           class="btn col-12 btn-custom-pink text-upper text-center"
                         >
@@ -702,13 +706,60 @@
                 </form>
               </div>
             </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+    
+        email: "",
+        password: "",
+        isFocus: false,
+      
+    };
+  },
+  methods: {
+     focusActive() {
+      this.isFocus = !this.isFocus
+    },
+    register() {
+        // console.log(this.email, this.password)
 
+        // database.auth().createUserWithEmailAndPassword(state.email,state.password)
+        // firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password)
+        // .then((response) => {
+        //   alert('success')
+        //   console.log(response)
+        // })
+        // .catch((error) => {
+        //   alert('failure')
+        //   console.log(error)
+        // })
+      const user = {
+              email: this.email,
+              password: this.password
+            }
+            console.log(user)
+            this.$store.dispatch('signupAction', user)
+
+      },
+       
+  
+  computed: {
+    focus() {
+      return this.isFocus ? 'focus' : ''
+    },
+  },
+      
+  },
+};
+</script>
 <style scoped>
 .placeholder.focus {
   bottom: auto;

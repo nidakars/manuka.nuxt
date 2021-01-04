@@ -462,13 +462,14 @@ export default {
     return {
       isActive: false,
       count: 1,
-      size: 1
+      size: 1,
+      
     }
   },
   created() {
     const id = this.$route.params.id;
-    this.$store.dispatch("product/initData");
-    this.$store.dispatch("product/setProduct", parseInt(id));
+    // this.$store.dispatch("product/fetchProducts");
+    this.$store.dispatch("product/SetProduct", parseInt(id));
   },
   computed: {
     isContentVisible() {
@@ -478,6 +479,7 @@ export default {
       return this.isActive ? 'active' : ''
     },
     product(){
+      
       return this.$store.getters['product/getProduct'];
     },
   },
@@ -490,6 +492,7 @@ export default {
         this.count--;
       }
     },
+
     addBasket() {
       const payload = {
         id: Math.random() * 1000,
@@ -497,7 +500,8 @@ export default {
         size: this.size,
         product: this.product
       };
-      this.$store.dispatch('basket/addBasket', payload);
+    
+   this.$store.dispatch('basket/addBasket', payload);
     }
   },
 }

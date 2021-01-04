@@ -1,4 +1,5 @@
-const data = require("@/data/products.json");
+import firebase from '@/plugins/firebase'
+// const data = require("@/data/products.json");
 
 export const state = () => ({
     isInitialized: false,
@@ -14,19 +15,28 @@ export const mutations = {
     }
 };
 export const actions = {
-    initData({ state, commit }, ) {
-        if (state.isInitialized === false) {
-            commit("setProducts", data);
-            state.isInitialized = true;
-        }
-    },
-    setProduct({ state, commit }, id) {
+    // initData({ state, commit }, ) {
+    //     if (state.isInitialized === false) {
+    //         commit("setProducts", data);
+    //         state.isInitialized = true;
+    //     }
+    // },
+    SetProduct({ state, commit }, id) {
         for (let i = 0; i < state.products.length; i++) {
             if (state.products[i].id === id) {
                 commit("setProduct", state.products[i]);
             }
         }
-    }
+    },
+    fetchProducts({ commit }) {
+        return new Promise((resolve, reject) => {
+
+            firebase.database().ref('/products').once('value').then((snapshot) => {
+
+                commit('setProducts', snapshot.val())
+            });
+        })
+    },
 };
 export const getters = {
     getProducts(state) {
@@ -35,4 +45,5 @@ export const getters = {
     getProduct(state) {
         return state.product;
     }
+
 };

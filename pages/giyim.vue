@@ -151,13 +151,17 @@ import leftMenu from '@/components/leftMenu'
 export default {
   name: 'app',
   data: () => {
-    return {}
+    return {loading:false}
   },
   components: {
     leftMenu
   },
   created() {
-    this.$store.dispatch('product/initData')
+  
+        this.loading=true
+        this.$store.dispatch('product/fetchProducts').then(() => this.loading =false)
+    
+  
   },
   computed: {
     products() {
