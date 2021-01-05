@@ -116,9 +116,7 @@
               ><span class="favSayi"></span
             ></nuxt-link>
             <nuxt-link to="/sepet" class="fr basketLink" id="cart-soft-count">
-              <span class="cart-soft-count" color="white">
-                {{ totalBasketItemCount }}</span
-              >
+              <span class="cart-soft-count"> {{ totalBasketItemCount }}</span>
             </nuxt-link>
           </div>
         </div>

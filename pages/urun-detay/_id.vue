@@ -193,27 +193,18 @@
                           >
                             <div class="pos-r fl col-12 ease variantList">
                               <a
+                                v-for="items in product.size"
+                                :key="items.size"
                                 data-id="146"
                                 data-group-id="2"
                                 data-target="3334"
                                 class="col"
-                                @click="size = '1'"
-                                :class="size === '1' ? 'selected' : ' '"
+                                @click="size = 'items'"
+                                :class="size === 'items' ? 'selected' : ' '"
                               >
-                                <p>1</p>
+                                <p>{{ items }}</p>
                                 <span class=""></span>
-                                <div class="hide BedenTooltip">Son Ürünler</div>
-                              </a>
-                              <a
-                                data-id="145"
-                                data-group-id="2"
-                                data-target="3334"
-                                class="col"
-                                @click="size = '2'"
-                                :class="size === '2' ? 'selected' : ' '"
-                              >
-                                <p>2</p>
-                                <span class=""></span>
+
                                 <div class="hide BedenTooltip">Son Ürünler</div>
                               </a>
                             </div>
