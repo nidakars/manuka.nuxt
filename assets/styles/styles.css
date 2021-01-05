@@ -882,7 +882,7 @@ li.col-1-5:last-child {
 
 .DetayWp a:before {
     content: "";
-    background: url(/assets/whatsapp-logo-variant.svg) no-repeat center;
+    background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/whatsapp-logo-variant.svg) no-repeat center;
     background-size: 100%;
     width: 32px;
     height: 35px;
@@ -901,19 +901,19 @@ li.col-1-5:last-child {
 }
 
 #fbShareBtn {
-    background-image: url(/assets/facebook-logo.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/facebook-logo.svg);
 }
 
 #twBtn {
-    background-image: url(/assets/twitter.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/twitter.svg);
 }
 
 #pinBtn {
-    background-image: url(/assets/pinterest.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/pinterest.svg);
 }
 
 #wpBtn {
-    background-image: url(/assets/whatsapp.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/whatsapp.svg);
 }
 
 .DetaySosyalMedya {
@@ -2703,6 +2703,287 @@ div+#campaign-products .block-title {
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0;
+}
+
+#cartDetail,
+#SepetForm {
+    margin-top: 20px;
+}
+
+#SepetForm .box-border,
+#SepetForm .line-top,
+#SepetForm .line-right,
+#SepetForm .line-bottom,
+#SepetForm .line-left {
+    border-color: #f3f3f3;
+}
+
+#SepetForm .lightBg .box-border,
+#SepetForm .lightBg .line-top,
+#SepetForm .lightBg .line-right,
+#SepetForm .lightBg .line-bottom,
+#SepetForm .lightBg .line-left {
+    border-color: #dadada;
+}
+
+#SepetForm .lightBg {
+    background-color: #f9f9f9;
+}
+
+#basketBtns .btn-small {
+    margin-right: 1px;
+    background: #000;
+    font-size: 13px;
+}
+
+#hopiSigninControl,
+#hopi-campaign-current {
+    position: relative;
+    font-size: 17px;
+    color: #65686e;
+    letter-spacing: .03em;
+    display: flex;
+    align-items: center;
+}
+
+#hopiSigninControl {
+    height: 60px;
+}
+
+#hopi-campaign-current {
+    flex-direction: row-reverse;
+}
+
+#hopiSigninControl img,
+#hopi-campaign-current img {
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+#hopiSigninControl img {
+    padding-right: 20px;
+}
+
+#hopi-campaign-current img {
+    width: 59px;
+}
+
+#hopiSigninControl span {
+    color: #e81e89;
+}
+
+#hopi-link {
+    text-decoration: underline;
+}
+
+#hopiSigninControl:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#hopi-campaign-current-wrap {
+    width: calc(100% - 100px);
+}
+
+#hopi-campaign-current-title {
+    font-size: 15px;
+    color: #e81e89;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+#hopi-campaign-current-name {
+    padding-bottom: 10px;
+}
+
+#hopi-campaign-current-points {
+    font-size: 12px;
+}
+
+#hopi-campaign-current-change,
+#hopi-campaign-current-remove {
+    float: left;
+    color: #f1bb06;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#hopi-campaign-current-change:before,
+#hopi-campaign-current-remove:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .bAdet,
+    .basketProName .AdetFiyatBox,
+    .mSilFavori #favoribtn,
+    .mSilText {
+        display: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .productPrcRow .qtyBtns input {
+        height: 25px;
+        line-height: 25px;
+        color: #525252;
+    }
+    .basketProName .AdetFiyatBox {
+        font-size: 13px;
+        padding-right: 0;
+        padding-top: 0;
+        font-weight: 600;
+    }
+    .productInfoRow .basketProName .text-description {
+        padding-right: 0;
+        line-height: 13px;
+        font-weight: 400;
+        color: #525252;
+    }
+    .basketProName .AdetFiyatBox span {
+        line-height: 13px;
+    }
+    .bAdetBox {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .bAdet {
+        color: #525252;
+        font-size: 12px;
+        line-height: 25px;
+        margin-right: 5px;
+    }
+    .mSilFavori #favoribtn {
+        padding-left: 0;
+        background: none;
+    }
+    .mSilFavori {
+        padding-left: 0;
+    }
+    .mSilFavori .removeBtn {
+        width: 100px;
+        background: url(/Data/EditorFiles/tema/svg/delete.svg) no-repeat left center;
+        background-size: contain;
+        padding-left: 20px;
+        line-height: 24px;
+        position: relative;
+        float: left;
+    }
+    .mSilFavori .removeBtn:before {
+        display: none;
+    }
+    .mSilText {
+        float: left;
+        color: #525252;
+        font-size: 11px;
+    }
+    .middleItem .qtyBtns input {
+        font-size: 14px;
+    }
+    #cartDetail {
+        margin-top: 0;
+    }
+    #SepetForm {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    #SepetForm .box-border,
+    #SepetForm .line-top,
+    #SepetForm .line-right,
+    #SepetForm .line-bottom,
+    #SepetForm .line-left {
+        border-color: #e2e2e2;
+    }
+    .productRow.d-flex {
+        display: initial;
+    }
+    .productRow div>span {
+        line-height: 1.5;
+    }
+    .productImg {
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+    .productInfoRow {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    [dir="rtl"] .productInfoRow {
+        padding-right: 10px;
+        padding-left: 0;
+    }
+    .productPrc {
+        text-align: right;
+    }
+    [dir="rtl"] .productPrc {
+        text-align: left;
+        padding-left: 0;
+    }
+    .qtyBtns {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .qtyBtns,
+    .qtyBtns a,
+    .qtyBtns input {
+        height: 35px;
+        line-height: 35px;
+        font-size: 19px;
+    }
+    .campaign-line.d-flex {
+        display: initial
+    }
+    #basketOptions>div {
+        padding-right: 0;
+    }
+    #basketBtns .NotEkle {
+        display: block !important;
+    }
+    #basketBtns {
+        margin-bottom: 10px;
+    }
+    #basketBtns .btn-small {
+        display: none;
+        font-size: 13px;
+        margin-bottom: 1px;
+    }
+    #hopiSigninControl,
+    #hopi-campaign-current {
+        font-size: 13px;
+    }
+    #hopiSigninControl:after {
+        display: none;
+    }
+    #cart-footer {
+        display: initial;
+    }
+    .image-wrapper {
+        padding-bottom: 90%;
+    }
+    #addCartBtn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    .productPrcRow>.col-sm-auto {
+        padding-left: 0;
+    }
 }
 
 #pageHeader .pageTitle:before {
@@ -17887,6 +18168,7 @@ a#cart-soft-count .cart-soft-count {
 #favoribtn {
     background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/like.svg) no-repeat center;
     position: relative;
+    margin-left: 15px;
 }
 
 #headerRight.flexwrap {
@@ -18006,7 +18288,7 @@ a#cart-soft-count .cart-soft-count {
 }
 
 .removeBtn {
-    /* background: url(/Data/EditorFiles/tema/svg/delete.svg) no-repeat center; */
+    background: url('https://img.manuka.com.tr/Data/EditorFiles/tema/svg/delete.svg') no-repeat center;
     background-size: 100%;
     width: 15px;
     height: 17px;
@@ -20062,7 +20344,7 @@ a.videobtn {
 }
 
 #favoribtn:hover {
-    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/heart-active.svg) no-repeat center;
+    background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/heart-active2.svg) no-repeat center;
 }
 
 @media screen and (min-width: 768px) {

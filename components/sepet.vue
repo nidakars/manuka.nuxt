@@ -2,28 +2,20 @@
   <div class="row mb">
     <div class="fl col-12 lightBg" id="pageHeader">
       <span class="col col-3 col-sm-12 pageTitle passed">
-        <span class="row basket">
-          SEPET
-        </span>
+        <span class="row basket"> SEPET </span>
       </span>
       <span class="col col-3 col-sm-12 pageTitle">
-        <span class="row address">
-          FATURA TESLİMAT
-        </span>
+        <span class="row address"> FATURA TESLİMAT </span>
       </span>
       <span class="col col-3 col-sm-12 pageTitle">
-        <span class="row payment">
-          ÖDEME
-        </span>
+        <span class="row payment"> ÖDEME </span>
       </span>
       <span class="col col-3 col-sm-12 pageTitle">
-        <span class="row confirm">
-          ONAY
-        </span>
+        <span class="row confirm"> ONAY </span>
       </span>
     </div>
     <div class="box col-12 progress">
-      <span class="fw600 a-center ease progress-bar" style="width:25%;"
+      <span class="fw600 a-center ease progress-bar" style="width: 25%"
         >25%</span
       >
     </div>
@@ -56,16 +48,17 @@
               Sil
             </div>
           </div>
-          <div  v-for="item in basket" :key="'basket'+item.id" class="box col-12 d-flex line-top productRow">
+          <div
+            v-for="item in basket"
+            :key="'basket' + item.id"
+            class="box col-12 d-flex line-top productRow"
+          >
             <div class="box col-2 col-sm-3 col-xs-4 productImg">
               <div class="col col-12">
                 <div class="row">
                   <div class="fl image-wrapper">
                     <div class="imgInner">
-                      <img
-                        :src="item.product.image"
-                        alt="item.product.title"
-                      />
+                      <img :src="item.product.image" alt="item.product.title" />
                     </div>
                   </div>
                 </div>
@@ -77,16 +70,18 @@
                   :href="'/urun-detay/' + item.product.id"
                   class="fl col-12 text-title text-bold text-upper dn-sm"
                 ></a>
-                
-                <nuxt-link :to="'/urun-detay/' + item.product.id" class="fl col-12 col-sm-7 text-description" target="_blank">
-                
-                  
+
+                <nuxt-link
+                  :to="'/urun-detay/' + item.product.id"
+                  class="fl col-12 col-sm-7 text-description"
+                  target="_blank"
+                >
                   >{{ item.product.title }} ( {{ item.size }} )</nuxt-link
                 >
 
                 <div class="box col-sm-5 text-center AdetFiyatBox">
                   <span class="text-custom-gray">
-                   {{item.product.price}}
+                    {{ item.product.price }}
                   </span>
                 </div>
               </span>
@@ -122,7 +117,7 @@
 
               <div class="box col-6 text-center AdetFiyatBox dn-sm">
                 <span class="text-custom-gray">
-                   {{item.product.price}}
+                  {{ item.product.price }}
                 </span>
               </div>
             </div>
@@ -131,13 +126,12 @@
                 class="fr btn-custom-light-gray icon-cancel icon-small icon-no-space text-center removeBtn"
                 @click="removeBasketItem(item.id)"
                 alt="0"
-                ><span class="mSilText">Sil</span></a
-              >
+                ><span class="mSilText"></span
+              ></a>
               <input type="hidden" id="cartproduct_id" value="3296" />
             </div>
           </div>
-      
-    
+
           <input type="hidden" name="AltUrun[]" id="AltUrun[]" value="" />
         </div>
 
@@ -156,16 +150,16 @@
 
                 <a
                   class="btn btn-small col-sm-6 col-xs-12 text-center btn-custom-light-gray"
-                  onclick="deleteAll();"
+                  @click="removeBasketAll(products.id)"
                 >
                   Sepeti Temizle
                 </a>
-                <a
+                <nuxt-link
                   class="btn btn-small col-sm-6 col-xs-12 text-center btn-custom-light-gray"
-                  href="/"
+                  to="giyim"
                 >
                   Alışverişe Devam
-                </a>
+                </nuxt-link>
                 <!-- <a if="IS_IMAGE_ADDING_ACTIVE==1" class="btn btn-small col-sm-6 col-xs-12 text-center btn-custom-light-gray popupWin" data-url="/srv/service/content/get/1054/image-notes" data-width="500">
                                     Resim Ekle
                                 </a> -->
@@ -177,8 +171,8 @@
                 >
                   Alışveriş Listeme Ekle
                 </a>
-                <a
-                  href="/order"
+                <nuxt-link
+                  to="/sepet"
                   onclick="if ($(this).data('disabled') == 1) {
                                             return false;
                                         }
@@ -188,31 +182,23 @@
                   id="updateBasket"
                 >
                   Sepeti Güncelle
-                </a>
+                </nuxt-link>
               </div>
             </div>
             <div class="col col-3 col-md-6 col-sm-12 fr">
               <div class="row">
                 <div class="col col-12">
                   <div class="row box-border b-top">
-                    <div class="box col-6 line-right">
-                      Sepet Toplamı
-                    </div>
-                    <div class="box col-6 a-right">
-                   {{ subtotal }} TL
-                    </div>
+                    <div class="box col-6 line-right">Sepet Toplamı</div>
+                    <div class="box col-6 a-right">{{ subtotal }} TL</div>
                   </div>
 
                   <!-- HOPI -->
 
                   <!-- HOPI -->
                   <div class="row mb box-border b-top">
-                    <div class="box col-6 line-right">
-                      Genel Toplam
-                    </div>
-                    <div class="box col-6 a-right">
-                      {{ total }} TL
-                    </div>
+                    <div class="box col-6 line-right">Genel Toplam</div>
+                    <div class="box col-6 a-right">{{ total }} TL</div>
                   </div>
                 </div>
 
@@ -310,45 +296,44 @@
 </template>
 
 <script>
-
 export default {
   data: () => {
-    return {
-
-    };
+    return {}
   },
-  created() {
-
-  },
+  created() {},
   computed: {
-    basket(){
-      return this.$store.getters['basket/getBasketItems'];
+    basket() {
+      return this.$store.getters['basket/getBasketItems']
     },
-    subtotal(){
-      let total = 0;
+    subtotal() {
+      let total = 0
       for (let i = 0; i < this.basket.length; i++) {
-        total += this.basket[i].product.price;
+        total += this.basket[i].product.price
       }
-      return total.toFixed(2);
+      return total.toFixed(2)
     },
     total() {
-      let total = 0;
+      let total = 0
       for (let i = 0; i < this.basket.length; i++) {
-        total += (this.basket[i].product.price * this.basket[i].count);
+        total += this.basket[i].product.price * this.basket[i].count
       }
-      return total.toFixed(2);
-    }
+      return total.toFixed(2)
+    },
   },
   methods: {
-    removeBasketItem(id){
-      this.$store.dispatch('basket/removeBasketItem', id);
+    removeBasketItem(id) {
+      this.$store.dispatch('basket/removeBasketItem', id)
     },
-    increase(id){
-      this.$store.dispatch('basket/increaseBasketItem', id);
+    removeBasketAll(id) {
+      this.$store.dispatch('basket/removeBasketItem', id)
     },
-    decrease(id){
-      this.$store.dispatch("basket/decreaseBasketItem", id);
-    }
-  }
+
+    increase(id) {
+      this.$store.dispatch('basket/increaseBasketItem', id)
+    },
+    decrease(id) {
+      this.$store.dispatch('basket/decreaseBasketItem', id)
+    },
+  },
 }
 </script>

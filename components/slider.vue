@@ -15,9 +15,9 @@
                     <div
                       class="owl-stage"
                       style="
+                        width: 16890px;
                         transform: translate3d(-7882px, 0px, 0px);
                         transition: all 0.25s ease 0s;
-                        width: 16890px;
                       "
                     >
                       <div class="owl-item" style="width: 1126px">

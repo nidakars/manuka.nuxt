@@ -8,27 +8,27 @@
               <div class="row mb">
                 <div
                   class="fl col-12 owl-carousel owl-carousel2029 owl-theme owl-loaded owl-drag"
+                  style="width: 1600px"
                 >
-                  <div class="owl-stage-outer">
-                    <div class="owl-stage">
-                      <div class="owl-item" style="width: 1126px">
+                  <div class="owl-stage-outer" style="width: 1600px">
+                    <div class="owl-stage" style="width: 800px">
+                      <div
+                        v-for="i in [currentIndex]"
+                        :key="i"
+                        class="owl-item"
+                        style="width: 1600px"
+                      >
                         <div class="item">
                           <a title="" class="fl col-12">
-                            <div v-for="i in [currentIndex]" :key="i">
-                              <img class="fl col-12" :src="currentImg" />
-                            </div>
+                            <img alt="" :src="currentImg" class="fl col-12" />
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="owl-nav">
-                    <div>
-                      <a class="owl-prev" @click="prev" href="#">&#10094;</a>
-                    </div>
-                    <div>
-                      <a class="owl-next" @click="next" href="#">&#10095;</a>
-                    </div>
+                    <div class="owl-prev" @click="prev"></div>
+                    <div class="owl-next" @click="next"></div>
                   </div>
                   <div class="owl-dots disabled"></div>
                 </div>

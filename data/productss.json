@@ -17,12 +17,8 @@
             "1",
             "2"
 
-        ],
-        "comments": [{
-            "name": "Ali",
-            "comment": "Merhaba Dünya",
-            "star": 5
-        }]
+        ]
+
     },
     {
         "id": 13402,
@@ -38,12 +34,7 @@
             "1",
             "2"
 
-        ],
-        "comments": [{
-            "name": "Ali",
-            "comment": "Merhaba Dünya",
-            "star": 5
-        }]
+        ]
     }, {
         "id": 13403,
         "title": "EKOSE ASTARLI CEKET MAVİ",
@@ -58,12 +49,7 @@
             "1",
             "2"
 
-        ],
-        "comments": [{
-            "name": "Ali",
-            "comment": "Merhaba Dünya",
-            "star": 5
-        }]
+        ]
     }, {
         "id": 13404,
         "title": "EKOSE ASTARLI CEKET MAVİ",
@@ -78,12 +64,7 @@
             "1",
             "2"
 
-        ],
-        "comments": [{
-            "name": "Ali",
-            "comment": "Merhaba Dünya",
-            "star": 5
-        }]
+        ]
     }
 
 ]

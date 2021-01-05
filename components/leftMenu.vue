@@ -17,23 +17,23 @@
             <div class="row">
               <ul class="fl col-12 catMenu">
                 <li>
-                  <a href="https://www.manuka.com.tr/indirim">İndirim</a>
+                  <a href="https://www.manuka.com.tr/indirim">İNDİRİM</a>
                 </li>
                 <li>
                   <a
                     href="https://www.manuka.com.tr/yeni-232"
                     class="fw700 active"
-                    >Yeni</a
+                    >YENİ</a
                   >
                 </li>
                 <li>
                   <a href="https://www.manuka.com.tr/makaron-renkleri"
-                    >Makaron Renkleri</a
+                    >MAKARON RENKLERİ</a
                   >
                 </li>
                 <li>
                   <a href="https://www.manuka.com.tr/avantajli-fiyatlar"
-                    >Avantajlı Fiyatlar</a
+                    >AVANTAJLI FİYATLAR</a
                   >
                 </li>
                 <li>
@@ -43,7 +43,7 @@
                 </li>
                 <li>
                   <a href="https://www.manuka.com.tr/naturel-koleksiyonu"
-                    >Naturel Koleksiyonu</a
+                    >Naturel KOLEKSİYONU</a
                   >
                 </li>
                 <li>
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="https://www.manuka.com.tr/toprak-tonlari-koleksiyonu"
-                    >Toprak Tonları Koleksiyonu</a
+                    >Toprak Tonları KOLEKSİYONU</a
                   >
                 </li>
                 <li>
@@ -62,8 +62,8 @@
                   >
                 </li>
                 <li class="parent" @click="giyim = !giyim">
-                  <span>Giyim</span>
-                  <ul v-if="giyim" class="box col-12 line-top ">
+                  <span>GİYİM</span>
+                  <ul v-if="giyim" class="box col-12 line-top">
                     <li>
                       <a href="https://www.manuka.com.tr/yelek">Yelek</a>
                     </li>
@@ -162,7 +162,7 @@
                 </li>
                 <li class="parent" @click="canta = !canta">
                   <span>Çanta</span>
-                  <ul v-if="canta" class="box col-12 line-top ">
+                  <ul v-if="canta" class="box col-12 line-top">
                     <li>
                       <a href="https://www.manuka.com.tr/bez-canta"
                         >Kanvas Çanta</a
@@ -207,7 +207,7 @@
                 </li>
                 <li @click="aksesuar = !aksesuar" class="parent">
                   <span>Aksesuar</span>
-                  <ul v-if="aksesuar" class="box col-12 line-top ">
+                  <ul v-if="aksesuar" class="box col-12 line-top">
                     <li>
                       <a href="https://www.manuka.com.tr/defter">Defter</a>
                     </li>
@@ -240,7 +240,7 @@
                 </li>
                 <li @click="ayakkabi = !ayakkabi" class="parent">
                   <span>Ayakkabı</span>
-                  <ul v-if="ayakkabi" class="box col-12 line-top ">
+                  <ul v-if="ayakkabi" class="box col-12 line-top">
                     <li>
                       <a href="https://www.manuka.com.tr/postal-341">Postal</a>
                     </li>
@@ -261,7 +261,7 @@
                 </li>
                 <li @click="kilif = !kilif" class="parent">
                   <span>Telefon Kılıfı</span>
-                  <ul v-if="kilif" class="box col-12 line-top ">
+                  <ul v-if="kilif" class="box col-12 line-top">
                     <li>
                       <a href="https://www.manuka.com.tr/6/6s-373">6/6S</a>
                     </li>
@@ -305,7 +305,7 @@
                 </li>
                 <li @click="corap = !corap" class="parent">
                   <span>Çorap</span>
-                  <ul v-if="corap" class="box col-12 line-top ">
+                  <ul v-if="corap" class="box col-12 line-top">
                     <li>
                       <a href="https://www.manuka.com.tr/kutulu-corap"
                         >Kutulu Çorap</a
@@ -346,7 +346,7 @@
 
 <script>
 export default {
-  name: "Lmenu",
+  name: 'Lmenu',
   components: {},
   data() {
     return {
@@ -356,9 +356,9 @@ export default {
       ayakkabi: false,
       kilif: false,
       corap: false,
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>
