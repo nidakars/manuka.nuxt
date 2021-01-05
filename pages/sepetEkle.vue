@@ -123,8 +123,7 @@
                               data-cart-id="0"
                               class="fr btn-default removeBasketProduct removeBtn"
                               @click="removeBasketItem(item.id)"
-                              >Sil</a
-                            >
+                            ></a>
                           </td>
                         </tr>
                       </tbody>
