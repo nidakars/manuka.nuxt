@@ -20,17 +20,21 @@
                         </NuxtLink>
                       </a>
                     </li>
-                    <li
+                    V-FOR İLE DATADAN ÇEKMEYE ÇALIŞTIM ANCAK category HATA VERDİ
+                    <!-- <li
+                   v-for="Listeme in product.category"
+                      :key="Listeme"
+                      
                       itemscope=""
                       itemtype="http://data-vocabulary.org/Breadcrumb"
                       class="fl"
                     >
                       <a title="giyim" itemprop="url" class="fl">
                         <NuxtLink to="/giyim"
-                          ><span itemprop="title">Giyim</span>
+                          ><span itemprop="title">{{Listeme}}</span>
                         </NuxtLink>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -2455,9 +2459,19 @@ export default {
     return {
       isClick: false,
       isR: false,
+      loading: false,
     }
   },
+  created() {
+    this.loading = true
+    this.$store
+      .dispatch('product/fetchProducts')
+      .then(() => (this.loading = false))
+  },
   computed: {
+    products() {
+      return this.$store.getters['product/getProducts']
+    },
     isVisible() {
       if (this.isClick) {
         return this.isClick
