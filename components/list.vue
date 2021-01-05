@@ -20,21 +20,24 @@
                         </NuxtLink>
                       </a>
                     </li>
-                    <!-- V-FOR İLE DATADAN ÇEKMEYE ÇALIŞTIM ANCAK category HATA VERDİ
-                  <li
-                   v-for="Listeme in product.title"
-                      :key="Listeme"
-                      
+
+                    <li
                       itemscope=""
                       itemtype="http://data-vocabulary.org/Breadcrumb"
                       class="fl"
                     >
-                      <a title="giyim" itemprop="url" class="fl">
-                        <NuxtLink to="/giyim"
-                          ><span itemprop="title">{{Listeme}}</span>
+                      <a
+                        
+                        title="giyim"
+                        itemprop="url"
+                        class="fl"
+                      >
+                        <NuxtLink  v-for="Listeme in products"
+                        :key="Listeme" to="/giyim"
+                          ><span itemprop="title">{{ Listeme.category }}</span>
                         </NuxtLink>
                       </a>
-                    </li>  -->
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -2471,7 +2474,7 @@
 
 <script>
 export default {
-  data() {
+  data: () => {
     return {
       isClick: false,
       isR: false,
@@ -2480,6 +2483,7 @@ export default {
       loading: false,
     }
   },
+
   created() {
     this.loading = true
     this.$store

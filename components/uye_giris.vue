@@ -6,7 +6,7 @@
     data-name="myPopupWin"
   >
     <div class="flex">
-      <nuxt-link class="pBg close" to="/giyim" ></nuxt-link>
+      <nuxt-link class="pBg close" to="/giyim"></nuxt-link>
       <div
         style="width: 500px; margin: 0 auto; z-index: 9981"
         class="pWin box whiteBg br5"
@@ -64,7 +64,7 @@
                     <span
                       class="col ease placeholder"
                       :class="focus"
-                      @click="focusActive()"
+                      @click="focusActive1()"
                       >Şifre</span
                     >
                   </div>
@@ -138,6 +138,7 @@ export default {
   data() {
     return {
       isFocus: false,
+      isFocus2: false,
     }
   },
   computed: {
@@ -148,6 +149,9 @@ export default {
   methods: {
     focusActive() {
       this.isFocus = !this.isFocus
+    },
+    focusActive1() {
+      this.isFocus2 = !this.isFocus2
     },
   },
 }
