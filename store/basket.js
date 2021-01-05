@@ -8,6 +8,9 @@ export const mutations = {
     removeBasketItem(state, index) {
         state.items.splice(index, 1);
     },
+    removeBasketAll(state, index) {
+        state.items[index].count++;
+    },
     increase(state, index) {
         state.items[index].count++;
     },
@@ -51,6 +54,14 @@ export const actions = {
                 commit('removeBasketItem', i);
                 return false;
             }
+        }
+    },
+    removeBasketAll({ state, commit }, id) {
+        for (let i = 0; i < state.items.length; i++) {
+
+            commit('removeBasketItem', i);
+            return false;
+
         }
     }
 };
