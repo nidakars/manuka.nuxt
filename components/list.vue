@@ -20,9 +20,9 @@
                         </NuxtLink>
                       </a>
                     </li>
-                    V-FOR İLE DATADAN ÇEKMEYE ÇALIŞTIM ANCAK category HATA VERDİ
-                    <!-- <li
-                   v-for="Listeme in product.category"
+                    <!-- V-FOR İLE DATADAN ÇEKMEYE ÇALIŞTIM ANCAK category HATA VERDİ
+                  <li
+                   v-for="Listeme in product.title"
                       :key="Listeme"
                       
                       itemscope=""
@@ -34,7 +34,7 @@
                           ><span itemprop="title">{{Listeme}}</span>
                         </NuxtLink>
                       </a>
-                    </li> -->
+                    </li>  -->
                   </ul>
                 </div>
               </div>
