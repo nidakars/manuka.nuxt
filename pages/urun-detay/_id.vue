@@ -105,7 +105,9 @@
                       >
                         {{ product.title }}
                       </h1>
-                      <div class="fl col-12 subCode">Ürün Kodu : M-1394-22</div>
+                      <div class="fl col-12 subCode">
+                        Ürün Kodu : M- {{ product.id }}
+                      </div>
                     </div>
                     <div
                       class="fl col-12"
@@ -125,10 +127,24 @@
                         <div class="row priceLine">
                           <div class="pos-r fl col-12 d-flex" id="price-flexer">
                             <div class="fl col-sm-12 d-flex">
-                              <div class="fl discountPrice" data-old="0">
+                              <div
+                                class="fl text-line currencyPrice discountedPrice pr"
+                                data-old="0"
+                              >
+                                <span
+                                  class="product-price-not-discounted"
+                                  data-price="329,90"
+                                  >{{ product.oldprice }}</span
+                                >
+                                TL
+                              </div>
+                              <div
+                                class="fl discountPrice indirimliRed"
+                                data-old="0"
+                              >
                                 <span
                                   class="product-price"
-                                  data-price="219,90"
+                                  data-price="296,91"
                                   >{{ product.price }}</span
                                 >
                                 TL
@@ -163,7 +179,7 @@
                             data-target="3334"
                             class="col selected"
                           >
-                            <p>MAVİ</p>
+                            <p>{{ product.color }}</p>
                           </a>
                         </div>
                       </div>
