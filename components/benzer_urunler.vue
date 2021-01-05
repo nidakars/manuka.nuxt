@@ -6,266 +6,42 @@
       class="personaclick-recommend col-12 fl personaclick-recommend-rendered"
       data-recommender-block="dynamic"
       data-recommender-code="c32a1648636cd0df43888f6f0ffcf783"
-      data-recommender-item="3334"
+      data-recommender-item="3132"
       data-recommender-callback="PersonaCallBack"
     >
-      <div data-categories='["316", "339"]' class="recommender-block-title">
+      <div data-categories='["316", "325"]' class="recommender-block-title">
         BENZER ÜRÜNLER
       </div>
       <div class="recommended-items owl-carousel owl-theme owl-loaded owl-drag">
         <div class="owl-stage-outer">
           <div
             class="owl-stage"
-            style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 3220px;"
+            style="
+              transform: translate3d(0px, 0px, 0px);
+              transition: all 0s ease 0s;
+              width: 2035px;
+            "
           >
             <div
+              v-for="i in products"
+              :key="i"
               class="owl-item active"
-              style="width: 312px; margin-right: 10px;"
+              style="width: 193.44px; margin-right: 10px"
             >
               <div class="recommended-item">
                 <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/desenli-krep-kimono-beyaz?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/197448890.jpg"
-                  /></a>
+                  <nuxt-link :to="'/urun-detay/' + i.id"
+                    ><img class="item_img" :src="i.image"
+                  /></nuxt-link>
                 </div>
                 <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/desenli-krep-kimono-beyaz?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >desenli krep kimono beyaz</a
-                  >
+                  <nuxt-link :to="'/urun-detay/' + i.id">{{
+                    i.title
+                  }}</nuxt-link>
                 </div>
 
-                <div class="persona-old-price">
-                  179,90 TL
-                </div>
-                <div class="persona-new-price">
-                  119,92 TL
-                </div>
-              </div>
-            </div>
-            <div
-              class="owl-item active"
-              style="width: 312px; margin-right: 10px;"
-            >
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/soft-worker-ceket-off-white?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/198018045.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/soft-worker-ceket-off-white?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >soft worker ceket off whıte</a
-                  >
-                </div>
-
-                <div class="persona-old-price">
-                  179,90 TL
-                </div>
-                <div class="persona-new-price">
-                  143,92 TL
-                </div>
-              </div>
-            </div>
-            <div
-              class="owl-item active"
-              style="width: 312px; margin-right: 10px;"
-            >
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/denim-ceket-off-white?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/197659191.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/denim-ceket-off-white?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >denim ceket off whıte</a
-                  >
-                </div>
-
-                <div class="persona-item-price">
-                  179,90 TL
-                </div>
-              </div>
-            </div>
-            <div
-              class="owl-item active"
-              style="width: 312px; margin-right: 10px;"
-            >
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/07-lisa-worker-hardal-2081?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/195491837.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/07-lisa-worker-hardal-2081?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >lısa worker hardal</a
-                  >
-                </div>
-
-                <div class="persona-old-price">
-                  189,90 TL
-                </div>
-                <div class="persona-new-price">
-                  119,90 TL
-                </div>
-              </div>
-            </div>
-            <div
-              class="owl-item active"
-              style="width: 312px; margin-right: 10px;"
-            >
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/denim-ceket-mint?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/197671086.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/denim-ceket-mint?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >denim ceket mint</a
-                  >
-                </div>
-
-                <div class="persona-item-price">
-                  179,90 TL
-                </div>
-              </div>
-            </div>
-            <div class="owl-item" style="width: 312px; margin-right: 10px;">
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/denim-ceket-lila?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/197671059.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/denim-ceket-lila?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >denim ceket lila</a
-                  >
-                </div>
-
-                <div class="persona-item-price">
-                  179,90 TL
-                </div>
-              </div>
-            </div>
-            <div class="owl-item" style="width: 312px; margin-right: 10px;">
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/flamli-pamuk-ceket-sutlu-kahve?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/196495565.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/flamli-pamuk-ceket-sutlu-kahve?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >flamlı pamuk ceket sütlü kahve</a
-                  >
-                </div>
-
-                <div class="persona-old-price">
-                  189,90 TL
-                </div>
-                <div class="persona-new-price">
-                  151,92 TL
-                </div>
-              </div>
-            </div>
-            <div class="owl-item" style="width: 312px; margin-right: 10px;">
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/bel-ayarlamali-ceket-siyah?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/201840850.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/bel-ayarlamali-ceket-siyah?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >bel ayarlamalı ceket siyah</a
-                  >
-                </div>
-
-                <div class="persona-item-price">
-                  149,90 TL
-                </div>
-              </div>
-            </div>
-            <div class="owl-item" style="width: 312px; margin-right: 10px;">
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/bel-ayarlamali-ceket-off-white?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/201841070.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/bel-ayarlamali-ceket-off-white?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >arına bel ayarlamalı ceket ...</a
-                  >
-                </div>
-
-                <div class="persona-item-price">
-                  149,90 TL
-                </div>
-              </div>
-            </div>
-            <div class="owl-item" style="width: 312px; margin-right: 10px;">
-              <div class="recommended-item">
-                <div class="recommended-item-photo">
-                  <a
-                    href="https://www.manuka.com.tr/flamli-pamuk-ceket-bakir?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    ><img
-                      class="item_img"
-                      src="https://pictures.personaclick.com/resize-images/520/76c817929f9164580e7d674b8e21b0/197616707.jpg"
-                  /></a>
-                </div>
-                <div class="recommended-item-title">
-                  <a
-                    href="https://www.manuka.com.tr/flamli-pamuk-ceket-bakir?recommended_by=dynamic&amp;recommended_code=c32a1648636cd0df43888f6f0ffcf783"
-                    >flamlı pamuk ceket bakır</a
-                  >
-                </div>
-
-                <div class="persona-old-price">
-                  189,90 TL
-                </div>
-                <div class="persona-new-price">
-                  151,92 TL
-                </div>
+                <div class="persona-old-price">{{ i.oldprice }} TL</div>
+                <div class="persona-new-price">{{ i.price }} TL</div>
               </div>
             </div>
           </div>
@@ -362,7 +138,7 @@
 }
 .personaclick-recommend .owl-prev:after {
   visibility: visible !important;
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   display: block;
@@ -378,7 +154,7 @@
 }
 .personaclick-recommend .owl-next:after {
   visibility: visible !important;
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   display: block;
@@ -467,3 +243,23 @@
   }
 }
 </style>
+
+<script>
+export default {
+  name: 'giyim',
+  data: () => {
+    return { loading: false }
+  },
+  created() {
+    this.loading = true
+    this.$store
+      .dispatch('product/fetchProducts')
+      .then(() => (this.loading = false))
+  },
+  computed: {
+    products() {
+      return this.$store.getters['product/getProducts']
+    },
+  },
+}
+</script>

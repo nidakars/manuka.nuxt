@@ -882,7 +882,7 @@ li.col-1-5:last-child {
 
 .DetayWp a:before {
     content: "";
-    background: url(/assets/whatsapp-logo-variant.svg) no-repeat center;
+    background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/whatsapp-logo-variant.svg) no-repeat center;
     background-size: 100%;
     width: 32px;
     height: 35px;
@@ -901,19 +901,19 @@ li.col-1-5:last-child {
 }
 
 #fbShareBtn {
-    background-image: url(/assets/facebook-logo.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/facebook-logo.svg);
 }
 
 #twBtn {
-    background-image: url(/assets/twitter.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/twitter.svg);
 }
 
 #pinBtn {
-    background-image: url(/assets/pinterest.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/pinterest.svg);
 }
 
 #wpBtn {
-    background-image: url(/assets/whatsapp.svg);
+    background-image: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/whatsapp.svg);
 }
 
 .DetaySosyalMedya {
@@ -17887,6 +17887,7 @@ a#cart-soft-count .cart-soft-count {
 #favoribtn {
     background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/like.svg) no-repeat center;
     position: relative;
+    margin-left: 15px;
 }
 
 #headerRight.flexwrap {
@@ -20062,7 +20063,7 @@ a.videobtn {
 }
 
 #favoribtn:hover {
-    background: url(https://img.manuka.com.tr/Data/EditorFiles/tema/svg/heart-active.svg) no-repeat center;
+    background: url(https://www.manuka.com.tr/Data/EditorFiles/tema/svg/heart-active2.svg) no-repeat center;
 }
 
 @media screen and (min-width: 768px) {

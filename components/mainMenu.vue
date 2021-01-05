@@ -101,22 +101,24 @@
             id="headerRight"
           >
             <!--<a href="javascript:void(0);" class="AraBtn fr forDesktop"></a>-->
-            <a
+            <nuxt-link
               data-width="500"
               data-url="/srv/service/customer/login-form"
-              href="/uye_giris"
+              to="/uye_giris"
               class="fr text-center authorLink popupWin"
-            ></a>
-            <a
+            ></nuxt-link>
+            <nuxt-link
               data-width="500"
               data-url="/srv/service/customer/login-form"
-              href="#"
+              to="#"
               class="col fr popupWin"
               id="favoribtn"
               ><span class="favSayi"></span
-            ></a>
+            ></nuxt-link>
             <nuxt-link to="/sepet" class="fr basketLink" id="cart-soft-count">
-              <span class="cart-soft-count " color="white"> {{ totalBasketItemCount }}</span>
+              <span class="cart-soft-count" color="white">
+                {{ totalBasketItemCount }}</span
+              >
             </nuxt-link>
           </div>
         </div>
@@ -134,7 +136,9 @@
             </li>
             <li class="fl drop-down hover parentLink">
               <span class="fl d-flex drop-down-title"
-                ><a class="fl" lang="tr" href="/giyim">Giyim</a></span
+                ><nuxt-link class="fl" lang="tr" to="/giyim"
+                  >Giyim</nuxt-link
+                ></span
               >
               <div
                 class="pos-a pos-top pos-left pos-right box p-left whiteBg box-border b-top subMenu top"
@@ -791,30 +795,23 @@ ul {
 }
 </style>
 <script>
-
 export default {
   data: () => {
-    return {
-
-    };
+    return {}
   },
-  created() {
-
-  },
+  created() {},
   computed: {
-    basket(){
-      return this.$store.getters['basket/getBasketItems'];
+    basket() {
+      return this.$store.getters['basket/getBasketItems']
     },
-    totalBasketItemCount(){
-      let count = 0;
-      for (let i = 0; i< this.basket.length; i++) {
-        count += this.basket[i].count;
+    totalBasketItemCount() {
+      let count = 0
+      for (let i = 0; i < this.basket.length; i++) {
+        count += this.basket[i].count
       }
-      return count;
-    }
+      return count
+    },
   },
-  methods: {
-  }
+  methods: {},
 }
 </script>
-
