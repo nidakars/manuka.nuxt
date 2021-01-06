@@ -1,6 +1,3 @@
-import Vuex from 'vuex'
-import { auth } from '~/plugins/firebase.js'
-
 export const state = () => ({
     isInitialized: false,
     user: null

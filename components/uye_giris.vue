@@ -6,7 +6,7 @@
     data-name="myPopupWin"
   >
     <div class="flex">
-      <nuxt-link class="pBg close" to="/giyim" ></nuxt-link>
+      <nuxt-link class="pBg close" to="/giyim"></nuxt-link>
       <div
         style="width: 500px; margin: 0 auto; z-index: 9981"
         class="pWin box whiteBg br5"
@@ -31,6 +31,7 @@
                           <div class="row input-icon tooltipWrapper">
                             <span class="icon icon-mail"></span>
                             <input
+                              v-model="email"
                               type="text"
                               placeholder="E-Mail"
                               name="pop-email"
@@ -54,6 +55,7 @@
                   <div class="row input-icon tooltipWrapper">
                     <span class="icon icon-pass"></span>
                     <input
+                      v-model="password"
                       type="password"
                       placeholder="Şifre"
                       name="pop-password"
@@ -64,7 +66,7 @@
                     <span
                       class="col ease placeholder"
                       :class="focus"
-                      @click="focusActive()"
+                      @click="focusActive1()"
                       >Şifre</span
                     >
                   </div>
@@ -91,7 +93,7 @@
                     <span class="col ease placeholder">Güvenlik Kodu</span>
                   </div>
                 </div>
-                <div class="box col-12">
+                <div @click="login" class="box col-12">
                   <div class="row">
                     <a
                       data-prefix="pop-"
@@ -115,11 +117,11 @@
                 </div>
                 <div class="col col-12">
                   <div class="row">
-                    <a
-                      href="/uye_kayit"
+                    <nuxt-link
+                      to="/uye_kayit"
                       class="fr form-link"
                       id="popup-member-register"
-                      >Üye Ol</a
+                      >Üye Ol</nuxt-link
                     >
                   </div>
                 </div>
@@ -138,6 +140,11 @@ export default {
   data() {
     return {
       isFocus: false,
+      isFocus2: false,
+      email: '',
+      password: '',
+      error: false,
+      success: false,
     }
   },
   computed: {
@@ -145,9 +152,34 @@ export default {
       return this.isFocus ? 'focus' : ''
     },
   },
+  mounted() {
+    console.log(this.$store.getters['user/getUser'])
+  },
   methods: {
     focusActive() {
       this.isFocus = !this.isFocus
+    },
+    focusActive1() {
+      this.isFocus2 = !this.isFocus2
+    },
+    login(e) {
+      e.preventDefault()
+      this.$fire.auth
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then((res) => {
+          console.log('Giriş başarılı')
+          this.$store.commit('user/setUser', this.email)
+          setTimeout(() => {
+            window.location.href = '/'
+          }, 1500)
+
+          this.error = false
+          this.success = true
+        })
+        .catch((err) => {
+          console.log('Giriş başarısız')
+          this.error = true
+        })
     },
   },
 }

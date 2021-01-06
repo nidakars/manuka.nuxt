@@ -157,13 +157,12 @@
               Alışverişe Devam
             </button>
           </nuxt-link>
-          <nuxt-link to="/sepet">
-            <!-- v-on:click="sepet"
+
+          <!-- v-on:click="sepet"
            -->
-            <button data-id="1" class="btn btn-radius btn-success fr">
-              Sepete Git
-            </button>
-          </nuxt-link>
+          <button data-id="1" class="btn btn-radius btn-success fr">
+            <nuxt-link to="/sepet"> Sepete Git </nuxt-link>
+          </button>
         </div>
       </div>
     </div>

@@ -4,12 +4,7 @@
     <leftMenu />
 
     <div id="mainColumn" class="fl col-10 col-md-9 col-sm-12">
-      <link
-        rel="stylesheet"
-        property="stylesheet"
-        type="text/css"
-        href="/theme/v4-freshscarfs/sub_theme/blok_kategori/firat/v4/StandartMenuFirat.css"
-      />
+      <link rel="stylesheet" property="stylesheet" type="text/css" />
 
       <div class="col col-12">
         <div id="katalog" class="row">

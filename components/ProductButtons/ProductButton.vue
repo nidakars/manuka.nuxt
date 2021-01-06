@@ -1,20 +1,15 @@
 <template>
   <div id="mainColumn" class="fl col-10 col-md-9 col-sm-12">
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      type="text/css"
-      href="/theme/v4-freshscarfs/sub_theme/blok_kategori/firat/v4/StandartMenuFirat.css"
-    />
+    <link rel="stylesheet" property="stylesheet" type="text/css" />
 
     <div class="col col-12">
       <div id="katalog" class="row">
         <div class="col col-12">
           <div class="row">
             <div class="fl col-12 catalogWrapper" id="list-slide1003">
-              <div  v-for="product in products"
-              :key="'product' + product.id"
-
+              <div
+                v-for="product in products"
+                :key="'product' + product.id"
                 class="col col-4 col-md-6 col-sm-12 productItem ease"
                 id="1003-product-detail-ekose-astarli-ceket-mavi"
                 itemscope="itemscope"
@@ -30,10 +25,15 @@
                 ></span>
                 <div class="col col-12 drop-down hover pos-r UrunListeBottom">
                   <div class="row">
-                    <nuxt-link :to="'/urun-detay/' + product.id" class="productBtn fl zoomBtn hide"
+                    <nuxt-link
+                      :to="'/urun-detay/' + product.id"
+                      class="productBtn fl zoomBtn hide"
                       >HIZLI GÖRÜNÜM</nuxt-link
                     >
-                    <nuxt-link :to="'/urun-detay/' + product.id" class="image-wrapper fl detailLink">
+                    <nuxt-link
+                      :to="'/urun-detay/' + product.id"
+                      class="image-wrapper fl detailLink"
+                    >
                       <span class="imgInner">
                         <img
                           :src="product.image"
@@ -57,7 +57,7 @@
                               title="EKOSE ASTARLI CEKET MAVİ"
                               class="col col-12 text-description detailLink productTitle"
                               data-id="3334"
-                              >{{product.item}}</nuxt-link
+                              >{{ product.item }}</nuxt-link
                             >
                             <a
                               data-width="500"
@@ -91,9 +91,11 @@
                             <div class="fl col-12 productPrice">
                               <div class="fl col-12 priceWrapper flexwrap">
                                 <span class="text-line discountedPrice">
-                                  {{product.oldprice}} TL
+                                  {{ product.oldprice }} TL
                                 </span>
-                                <span class="currentPrice"> {{product.price}} TL </span>
+                                <span class="currentPrice">
+                                  {{ product.price }} TL
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -150,13 +152,13 @@ export default {
       size2: false,
       isActive: false,
       count: 1,
-      size: 1
+      size: 1,
     }
   },
   created() {
-    const id = this.$route.params.id;
-    this.$store.dispatch("product/initData");
-    this.$store.dispatch("product/setProduct", parseInt(id));
+    const id = this.$route.params.id
+    this.$store.dispatch('product/initData')
+    this.$store.dispatch('product/setProduct', parseInt(id))
   },
   computed: {
     isContentVisible() {
@@ -171,8 +173,8 @@ export default {
     size2Classes() {
       return this.size2 ? 'selected' : ''
     },
-    product(){
-      return this.$store.getters['product/getProduct'];
+    product() {
+      return this.$store.getters['product/getProduct']
     },
   },
   methods: {
@@ -185,9 +187,9 @@ export default {
     toggleActive() {
       this.isActive = !this.isActive
     },
-    decsreaseCount(){
+    decsreaseCount() {
       if (this.count > 1) {
-        this.count--;
+        this.count--
       }
     },
     addBasket() {
@@ -195,10 +197,10 @@ export default {
         id: Math.random() * 1000,
         count: this.count,
         size: this.size,
-        product: this.product
-      };
-      this.$store.dispatch('basket/addBasket', payload);
-    }
+        product: this.product,
+      }
+      this.$store.dispatch('basket/addBasket', payload)
+    },
   },
 }
 </script>

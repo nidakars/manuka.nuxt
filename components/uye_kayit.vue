@@ -36,7 +36,8 @@
                       >
                         <div class="row input-icon tooltipWrapper">
                           <input
-                            
+                            @focus="ad = true"
+                            @blur="ad = false"
                             type="text"
                             placeholder="Ad"
                             name="name"
@@ -44,9 +45,8 @@
                             class="col col-12 required withHolder loadedPlace personaclick-initialized"
                           />
                           <span
-                           class="col ease placeholder"
-                            :class="focus"
-                            @click="focusActive()"
+                            :class="{ focus: ad }"
+                            class="col ease placeholder"
                             >Ad</span
                           >
                         </div>
@@ -63,10 +63,7 @@
                             id="surname"
                             class="col col-12 required withHolder loadedPlace personaclick-initialized"
                           />
-                          <span class="col ease placeholder"
-                          :class="focus"
-                          @click="focusActive()"
-                          >Soyad</span>
+                          <span class="col ease placeholder">Soyad</span>
                         </div>
                       </div>
                       <div
@@ -81,10 +78,7 @@
                             id="company"
                             class="col col-12 withHolder loadedPlace"
                           />
-                          <span class="col ease placeholder"
-                          :class="focus"
-                          @click="focusActive()"
-                          >Firma</span>
+                          <span class="col ease placeholder">Firma</span>
                         </div>
                       </div>
                       <div class="fl col-12 text-title text-semibold d-flex mt">
@@ -389,10 +383,7 @@
                             class="col col-12 phone TelUzun required withHolder loadedPlace"
                             data-val=""
                           />
-                          <span class="col ease placeholder"
-                          :class="focus"
-                          @click="focusActive()"
-                          >Cep Telefonu</span>
+                          <span class="col ease placeholder">Cep Telefonu</span>
                         </div>
                       </div>
                       <div
@@ -400,8 +391,8 @@
                         id="alan_eposta"
                       >
                         <div class="row input-icon tooltipWrapper">
-                          <span class="icon icon-mail"></span>
                           <input
+                            value=""
                             type="email"
                             placeholder="E-Mail"
                             name="email"
@@ -413,7 +404,8 @@
                           <span id="eposta_hata"></span>
                           <span id="kayitli_eposta"></span>
                           <span
-                            class="col ease placeholder"
+                            for="email"
+                            class="col ease placeholder focus"
                             :class="focus"
                             @click="focusActive()"
                             >E-Mail</span
@@ -432,10 +424,7 @@
                             id="post_code"
                             class="col col-12 required withHolder loadedPlace"
                           />
-                          <span class="col ease placeholder"
-                          :class="focus"
-                          @click="focusActive()"
-                          >Posta</span>
+                          <span class="col ease placeholder">Posta</span>
                         </div>
                       </div>
                       <div
@@ -454,10 +443,7 @@
                               id="city"
                               class="col col-12 required withHolder loadedPlace"
                             />
-                            <span class="col ease placeholder"
-                            :class="focus"
-                            @click="focusActive()"
-                            ></span>
+                            <span class="col ease placeholder"></span>
                           </div>
                           <div class="fl col-12 adresSelect">
                             <select
@@ -567,10 +553,7 @@
                               id="town"
                               class="col col-12 required withHolder loadedPlace"
                             />
-                            <span class="col ease placeholder"
-                            :class="focus"
-                            @click="focusActive()"
-                           >İlçe</span>
+                            <span class="col ease placeholder">İlçe</span>
                           </div>
                           <div class="fl col-12 adresSelect">
                             <select
@@ -596,9 +579,7 @@
                               id="district"
                               class="col col-12 required withHolder loadedPlace"
                             />
-                            <span class="col ease placeholder"
-                            :class="focus"
-                      @click="focusActive()">Semt</span>
+                            <span class="col ease placeholder">Semt</span>
                           </div>
                           <div class="fl col-12 adresSelect hideThis">
                             <select
@@ -622,8 +603,8 @@
                         id="alan_parola"
                       >
                         <div class="row input-icon tooltipWrapper">
-                           <span class="icon icon-pass"></span>
                           <input
+                            value=""
                             type="password"
                             placeholder="Şifre"
                             name="password"
@@ -632,7 +613,8 @@
                             class="col col-12 required withHolder loadedPlace"
                           />
                           <span
-                            class="col ease placeholder"
+                            for="password"
+                            class="col ease placeholder focus"
                             :class="focus"
                             @click="focusActive()"
                             >Şifre</span
@@ -651,10 +633,7 @@
                             id="password_again"
                             class="col col-12 required withHolder loadedPlace"
                           />
-                          <span class="col ease placeholder"
-                          :class="focus"
-                      @click="focusActive()"
-                      >Şifre Tekrar</span>
+                          <span class="col ease placeholder">Şifre Tekrar</span>
                         </div>
                       </div>
                       <div class="box col-12">
@@ -736,7 +715,7 @@
                           </label>
                         </div>
                       </div>
-                      <div @click="login" class="col col-12">
+                      <div class="col col-12">
                         <div class="row">
                           <a
                             type="submit"
@@ -778,41 +757,10 @@ export default {
       firma: false,
       error: false,
       success: false,
-      isFocus: false,
     }
   },
-  mounted() {
-    console.log(this.$store.getters['user/getUser'])
-  },
-  computed: {
-    focus() {
-      return this.isFocus ? 'focus' : ''
-    },
-  },
-  methods: {
-    focusActive() {
-      this.isFocus = !this.isFocus
-    },
-    login(e) {
-      e.preventDefault()
-      this.$fire.auth
-        .signInWithEmailAndPassword(this.email, this.password)
-        .then((res) => {
-          console.log('Giriş başarılı')
-          this.$store.commit('user/setUser', this.email)
-          setTimeout(() => {
-            window.location.href = '/'
-          }, 1500)
 
-          this.error = false
-          this.success = true
-        })
-        .catch((err) => {
-          console.log('Giriş başarısız')
-          this.error = true
-        })
-    },
-  },
+  methods: {},
 }
 </script>
 <style scoped>
@@ -862,7 +810,6 @@ export default {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  speak: none;
 }
 .text-custom-pink,
 .active .text-custom-gray,

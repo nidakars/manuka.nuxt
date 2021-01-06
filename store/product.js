@@ -1,6 +1,3 @@
-import firebase from '@/plugins/firebase'
-// const data = require("@/data/products.json");
-
 export const state = () => ({
     isInitialized: false,
     products: [],
