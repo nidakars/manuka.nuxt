@@ -9,6 +9,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/firebase": "^7.3.0",
+    "@nuxtjs/pwa": "^3.3.3",
     "core-js": "^3.6.5",
     "firebase": "^8.2.1",
     "manuka.vuex-main": "file:vuex",
