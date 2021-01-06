@@ -14,7 +14,7 @@
                 </div>
               </div>
             </div>
-            <form @submit.prevent="register">
+            <form action="" method="post" onsubmit="return userLogin(this)">
               <div class="box col-12 p-left" id="uye-kayit-form">
                 <div class="row">
                   <div class="col col-12"></div>
@@ -392,6 +392,7 @@
                       >
                         <div class="row input-icon tooltipWrapper">
                           <input
+                            value=""
                             type="email"
                             placeholder="E-Mail"
                             name="email"
@@ -403,7 +404,8 @@
                           <span id="eposta_hata"></span>
                           <span id="kayitli_eposta"></span>
                           <span
-                            class="col ease placeholder"
+                            for="email"
+                            class="col ease placeholder focus"
                             :class="focus"
                             @click="focusActive()"
                             >E-Mail</span
@@ -602,6 +604,7 @@
                       >
                         <div class="row input-icon tooltipWrapper">
                           <input
+                            value=""
                             type="password"
                             placeholder="Şifre"
                             name="password"
@@ -610,7 +613,8 @@
                             class="col col-12 required withHolder loadedPlace"
                           />
                           <span
-                            class="col ease placeholder"
+                            for="password"
+                            class="col ease placeholder focus"
                             :class="focus"
                             @click="focusActive()"
                             >Şifre</span
@@ -743,6 +747,7 @@
 </template>
 <script>
 export default {
+  name: 'signin',
   data() {
     return {
       email: '',
@@ -750,30 +755,12 @@ export default {
       ad: false,
       soyad: false,
       firma: false,
+      error: false,
+      success: false,
     }
   },
-  methods: {
-    register() {
-      // console.log(this.email, this.password)
 
-      // database.auth().createUserWithEmailAndPassword(state.email,state.password)
-      // firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password)
-      // .then((response) => {
-      //   alert('success')
-      //   console.log(response)
-      // })
-      // .catch((error) => {
-      //   alert('failure')
-      //   console.log(error)
-      // })
-      const user = {
-        email: this.email,
-        password: this.password,
-      }
-      console.log(user)
-      this.$store.dispatch('signupAction', user)
-    },
-  },
+  methods: {},
 }
 </script>
 <style scoped>
@@ -823,7 +810,6 @@ export default {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  speak: none;
 }
 .text-custom-pink,
 .active .text-custom-gray,
