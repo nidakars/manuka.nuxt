@@ -20,21 +20,24 @@
                         </NuxtLink>
                       </a>
                     </li>
-                    <!-- V-FOR İLE DATADAN ÇEKMEYE ÇALIŞTIM ANCAK category HATA VERDİ
-                  <li
-                   v-for="Listeme in product.title"
-                      :key="Listeme"
-                      
+
+                    <li
                       itemscope=""
                       itemtype="http://data-vocabulary.org/Breadcrumb"
                       class="fl"
                     >
-                      <a title="giyim" itemprop="url" class="fl">
-                        <NuxtLink to="/giyim"
-                          ><span itemprop="title">{{Listeme}}</span>
+                      <a
+                        
+                        title="giyim"
+                        itemprop="url"
+                        class="fl"
+                      >
+                        <NuxtLink  v-for="Listeme in products"
+                        :key="Listeme" to="/giyim"
+                          ><span itemprop="title">{{ Listeme.category }}</span>
                         </NuxtLink>
                       </a>
-                    </li>  -->
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -66,7 +69,7 @@
                             <div class="TumKatBox">
                               <div
                                 class="col col-12 text-custom-gray text-semibold col-title filter-title"
-                                :class="kClasses"
+                                :class="this.isClick ? 'hidden' : ''"
                                 @click="Active()"
                               >
                                 KATEGORİLER
@@ -74,9 +77,9 @@
                               <div
                                 class="fl col-12 fValuesBox fCatBox"
                                 style="display: block"
-                                :class="oClasses"
-                                v-show="isVisible"
-                                :style="sBlock"
+                                :class="this.isClick ? 'open' : ''"
+                                v-show="this.isClick"
+                                :style="this.isClick ? 'none' : ''"
                               >
                                 <ul class="box col-12">
                                   <li class="fl col-12">
@@ -290,7 +293,7 @@
                         <div class="fl col-12">
                           <div
                             class="col col-12 text-custom-gray text-semibold col-title filter-title"
-                            :class="kClasses"
+                            :class="this.isR ? 'hidden' : ''"
                             @click="Active1()"
                           >
                             Renk
@@ -298,9 +301,9 @@
                           <div
                             class="box col-12 fValuesBox"
                             style="display: block"
-                            :class="oClasses"
-                            v-show="isVisible"
-                            :style="sBlock"
+                            :class="this.isR ? 'open' : ''"
+                            v-show="this.isR"
+                            :style="this.isR ? 'none' : ''"
                           >
                             <div class="fl col-12 fVariantBox FilterScroll">
                               <div class="fl col-12 mb">
@@ -2071,10 +2074,18 @@
                         <div class="fl col-12">
                           <div
                             class="col col-12 text-custom-gray text-semibold col-title filter-title"
+                            :class="this.isB ? 'hidden' : ''"
+                            @click="Active2()"
                           >
                             Beden
                           </div>
-                          <div class="box col-12 fValuesBox">
+                          <div
+                            class="box col-12 fValuesBox"
+                            style="display: block"
+                            :class="this.isB ? 'open' : ''"
+                            v-show="this.isB"
+                            :style="this.isB ? 'none' : ''"
+                          >
                             <div class="col col-12 fVariantBox FilterScroll">
                               <div class="fl col-12 mb">
                                 <label
@@ -2316,10 +2327,18 @@
                         <div class="fl col-12">
                           <div
                             class="col col-12 text-custom-gray text-semibold col-title filter-title"
+                            :class="this.isF ? 'hidden' : ''"
+                            @click="Active3()"
                           >
                             Fiyat
                           </div>
-                          <div class="box col-12 fValuesBox fPriceSliderBox">
+                          <div
+                            class="box col-12 fValuesBox fPriceSliderBox"
+                            style="display: block"
+                            :class="this.isF ? 'open' : ''"
+                            v-show="this.isF"
+                            :style="this.isF ? 'none' : ''"
+                          >
                             <div class="row forMobile">
                               <div class="fl col-12 fPriceBox">
                                 <div class="row">
@@ -2455,10 +2474,12 @@
 
 <script>
 export default {
-  data() {
+  data: () => {
     return {
       isClick: false,
       isR: false,
+      isB: false,
+      isF: false,
       loading: false,
     }
   },
@@ -2471,38 +2492,6 @@ export default {
   computed: {
     products() {
       return this.$store.getters['product/getProducts']
-    },
-    isVisible() {
-      if (this.isClick) {
-        return this.isClick
-      }
-      if (this.isR) {
-        return this.isR
-      }
-    },
-    kClasses() {
-      if (this.isClick || !this.isClick) {
-        return this.isClick ? 'hidden' : ''
-      }
-      if (this.isR || !this.isR) {
-        return this.isR ? 'hidden' : ''
-      }
-    },
-    oClasses() {
-      if (this.isClick || !this.isClick) {
-        return this.isClick ? 'open' : ''
-      }
-      if (this.isR || !this.isR) {
-        return this.isR ? 'open' : ''
-      }
-    },
-    sBlock() {
-      if (this.isClick || !this.isClick) {
-        return this.isClick ? 'none' : ''
-      }
-      if (this.isR || !this.isR) {
-        return this.isR ? 'none' : ''
-      }
     },
   },
   methods: {
@@ -2527,6 +2516,12 @@ export default {
     },
     Active1() {
       this.isR = !this.isR
+    },
+    Active2() {
+      this.isB = !this.isB
+    },
+    Active3() {
+      this.isF = !this.isF
     },
   },
 }
