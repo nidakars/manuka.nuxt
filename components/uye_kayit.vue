@@ -14,7 +14,7 @@
                 </div>
               </div>
             </div>
-            <form @submit.prevent="register">
+            <form action="" method="post" onsubmit="return userLogin(this)">
               <div class="box col-12 p-left" id="uye-kayit-form">
                 <div class="row">
                   <div class="col col-12"></div>
@@ -36,8 +36,7 @@
                       >
                         <div class="row input-icon tooltipWrapper">
                           <input
-                            @focus="ad = true"
-                            @blur="ad = false"
+                            
                             type="text"
                             placeholder="Ad"
                             name="name"
@@ -45,8 +44,9 @@
                             class="col col-12 required withHolder loadedPlace personaclick-initialized"
                           />
                           <span
-                            :class="{ focus: ad }"
-                            class="col ease placeholder"
+                           class="col ease placeholder"
+                            :class="focus"
+                            @click="focusActive()"
                             >Ad</span
                           >
                         </div>
@@ -63,7 +63,10 @@
                             id="surname"
                             class="col col-12 required withHolder loadedPlace personaclick-initialized"
                           />
-                          <span class="col ease placeholder">Soyad</span>
+                          <span class="col ease placeholder"
+                          :class="focus"
+                          @click="focusActive()"
+                          >Soyad</span>
                         </div>
                       </div>
                       <div
@@ -78,7 +81,10 @@
                             id="company"
                             class="col col-12 withHolder loadedPlace"
                           />
-                          <span class="col ease placeholder">Firma</span>
+                          <span class="col ease placeholder"
+                          :class="focus"
+                          @click="focusActive()"
+                          >Firma</span>
                         </div>
                       </div>
                       <div class="fl col-12 text-title text-semibold d-flex mt">
@@ -383,7 +389,10 @@
                             class="col col-12 phone TelUzun required withHolder loadedPlace"
                             data-val=""
                           />
-                          <span class="col ease placeholder">Cep Telefonu</span>
+                          <span class="col ease placeholder"
+                          :class="focus"
+                          @click="focusActive()"
+                          >Cep Telefonu</span>
                         </div>
                       </div>
                       <div
@@ -391,6 +400,7 @@
                         id="alan_eposta"
                       >
                         <div class="row input-icon tooltipWrapper">
+                          <span class="icon icon-mail"></span>
                           <input
                             type="email"
                             placeholder="E-Mail"
@@ -422,7 +432,10 @@
                             id="post_code"
                             class="col col-12 required withHolder loadedPlace"
                           />
-                          <span class="col ease placeholder">Posta</span>
+                          <span class="col ease placeholder"
+                          :class="focus"
+                          @click="focusActive()"
+                          >Posta</span>
                         </div>
                       </div>
                       <div
@@ -441,7 +454,10 @@
                               id="city"
                               class="col col-12 required withHolder loadedPlace"
                             />
-                            <span class="col ease placeholder"></span>
+                            <span class="col ease placeholder"
+                            :class="focus"
+                            @click="focusActive()"
+                            ></span>
                           </div>
                           <div class="fl col-12 adresSelect">
                             <select
@@ -551,7 +567,10 @@
                               id="town"
                               class="col col-12 required withHolder loadedPlace"
                             />
-                            <span class="col ease placeholder">İlçe</span>
+                            <span class="col ease placeholder"
+                            :class="focus"
+                            @click="focusActive()"
+                           >İlçe</span>
                           </div>
                           <div class="fl col-12 adresSelect">
                             <select
@@ -577,7 +596,9 @@
                               id="district"
                               class="col col-12 required withHolder loadedPlace"
                             />
-                            <span class="col ease placeholder">Semt</span>
+                            <span class="col ease placeholder"
+                            :class="focus"
+                      @click="focusActive()">Semt</span>
                           </div>
                           <div class="fl col-12 adresSelect hideThis">
                             <select
@@ -601,6 +622,7 @@
                         id="alan_parola"
                       >
                         <div class="row input-icon tooltipWrapper">
+                           <span class="icon icon-pass"></span>
                           <input
                             type="password"
                             placeholder="Şifre"
@@ -629,7 +651,10 @@
                             id="password_again"
                             class="col col-12 required withHolder loadedPlace"
                           />
-                          <span class="col ease placeholder">Şifre Tekrar</span>
+                          <span class="col ease placeholder"
+                          :class="focus"
+                      @click="focusActive()"
+                      >Şifre Tekrar</span>
                         </div>
                       </div>
                       <div class="box col-12">
@@ -711,7 +736,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="col col-12">
+                      <div @click="login" class="col col-12">
                         <div class="row">
                           <a
                             type="submit"
@@ -743,6 +768,7 @@
 </template>
 <script>
 export default {
+  name: 'signin',
   data() {
     return {
       email: '',
@@ -750,28 +776,41 @@ export default {
       ad: false,
       soyad: false,
       firma: false,
+      error: false,
+      success: false,
+      isFocus: false,
     }
   },
+  mounted() {
+    console.log(this.$store.getters['user/getUser'])
+  },
+  computed: {
+    focus() {
+      return this.isFocus ? 'focus' : ''
+    },
+  },
   methods: {
-    register() {
-      // console.log(this.email, this.password)
+    focusActive() {
+      this.isFocus = !this.isFocus
+    },
+    login(e) {
+      e.preventDefault()
+      this.$fire.auth
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then((res) => {
+          console.log('Giriş başarılı')
+          this.$store.commit('user/setUser', this.email)
+          setTimeout(() => {
+            window.location.href = '/'
+          }, 1500)
 
-      // database.auth().createUserWithEmailAndPassword(state.email,state.password)
-      // firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password)
-      // .then((response) => {
-      //   alert('success')
-      //   console.log(response)
-      // })
-      // .catch((error) => {
-      //   alert('failure')
-      //   console.log(error)
-      // })
-      const user = {
-        email: this.email,
-        password: this.password,
-      }
-      console.log(user)
-      this.$store.dispatch('signupAction', user)
+          this.error = false
+          this.success = true
+        })
+        .catch((err) => {
+          console.log('Giriş başarısız')
+          this.error = true
+        })
     },
   },
 }
